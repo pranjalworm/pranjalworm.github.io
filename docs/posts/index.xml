@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Pranjal Dubey</title>
-    <link>https://pranjaldubey.com/posts/</link>
+    <link>https://pranjalworm.github.io/posts/</link>
     <description>Recent content in Posts on Pranjal Dubey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Mar 2021 21:33:21 +0530</lastBuildDate><atom:link href="https://pranjaldubey.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Mar 2021 21:33:21 +0530</lastBuildDate><atom:link href="https://pranjalworm.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World</title>
-      <link>https://pranjaldubey.com/posts/hello-world/</link>
+      <link>https://pranjalworm.github.io/posts/hello-world/</link>
       <pubDate>Thu, 18 Mar 2021 21:33:21 +0530</pubDate>
       
-      <guid>https://pranjaldubey.com/posts/hello-world/</guid>
+      <guid>https://pranjalworm.github.io/posts/hello-world/</guid>
       <description>Mandatory Hello World post!
 Just getting started with blogging. You&amp;rsquo;ll see a lot more stuff here soon.</description>
     </item>

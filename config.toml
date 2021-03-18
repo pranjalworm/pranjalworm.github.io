@@ -1,9 +1,9 @@
-baseURL = "https://pranjaldubey.com"
+# baseURL = "http://localhost:8080/docs"
+baseURL = "https://pranjalworm.github.io"
 languageCode = "en-us"
 title = "Pranjal Dubey"
 theme = "ananke"
 publishdir = "./docs"
-
 
 enableRobotsTXT = true
 
@@ -14,7 +14,7 @@ enableRobotsTXT = true
 
 [params]
   description = "Personal website of Pranjal Dubey"
-  featured_image = "/images/home.jpg"
+  featured_image = "./images/home.jpg"
   github = "https://github.com/pranjalworm"
   instagram = "https://www.instagram.com/pranjalworm/"
   recent_posts_number = 4
