@@ -1,0 +1,18 @@
+baseURL = "https://pranjaldubey.com"
+languageCode = "en-us"
+title = "Pranjal Dubey"
+theme = "ananke"
+
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  description = "Personal website of Pranjal Dubey"
+  featured_image = "/images/home.jpg"
+  github = "https://github.com/pranjalworm"
+  instagram = "https://www.instagram.com/pranjalworm/"
+  recent_posts_number = 4
