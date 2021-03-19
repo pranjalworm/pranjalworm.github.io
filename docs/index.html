@@ -35,14 +35,14 @@
       
     
     
-    <meta property="og:title" content="Pranjal Dubey" />
+    <meta property="og:title" content="" />
 <meta property="og:description" content="Personal website of Pranjal Dubey" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://pranjalworm.github.io/" />
 
-<meta itemprop="name" content="Pranjal Dubey">
+<meta itemprop="name" content="">
 <meta itemprop="description" content="Personal website of Pranjal Dubey"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Pranjal Dubey"/>
+<meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="Personal website of Pranjal Dubey"/>
 
 	
@@ -70,8 +70,20 @@
         <ul class="pl0 mr3">
           
           <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About me page">
+              About me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
             <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
               Posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
             </a>
           </li>
           
@@ -129,7 +141,8 @@
       
 
   <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    
+    <h3 id="coder-photographer-reader-traveler">Coder. Photographer. Reader. Traveler.</h3>
+
   </article>
   
   
@@ -145,7 +158,7 @@
       
        
           <h1 class="flex-none">
-            Recent Posts
+            Recent Projects
           </h1>
         
 
@@ -162,15 +175,44 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://pranjalworm.github.io/posts/hello-world/" class="color-inherit dim link">
-            Hello World
+          <a href="https://pranjalworm.github.io/projects/css-filter-generator/" class="color-inherit dim link">
+            Css Filter Generator
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Mandatory Hello World post!
-Just getting started with blogging. You&rsquo;ll see a lot more stuff here soon.
+          Project website: https://pranjaldubey.com/css-filter-generator/
+This project is based off Barrett Sonntag&rsquo;s codepen.
+The problem I faced when using Barrett&rsquo;s version was that I had to try multiple times (sometimes 10-20 times) to get a filter value with loss &lt;= 1. So I created a version where the computation logic keeps spitting filter values till the time it hits a loss of less than equal to 1.
+In addition to that I placed all the computation logic inside a web worker so that it doesn&rsquo;t put strain on the main thread.
         </div>
-          <a href="https://pranjalworm.github.io/posts/hello-world/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+          <a href="https://pranjalworm.github.io/projects/css-filter-generator/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://pranjalworm.github.io/projects/pranjal-dubey-photography/" class="color-inherit dim link">
+            Pranjal Dubey Photography
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          Project website: https://pranjaldubey.photography
+This project is an attempt to document my photography. It&rsquo;s an open source project and you can checkout the source code here.
+I chose StencilJS to create the website over any fancy library/framework because I wanted to have complete end-to-end control over the UI/UX as well as the underlying driving mechanism.
+It&rsquo;s still a work in progress&hellip;
+        </div>
+          <a href="https://pranjalworm.github.io/projects/pranjal-dubey-photography/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>

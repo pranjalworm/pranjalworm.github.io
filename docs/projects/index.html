@@ -30,14 +30,19 @@
 
     
     
-    <meta property="og:title" content="404 Page not found" />
+      <link href="/projects/index.xml" rel="alternate" type="application/rss+xml" title="Pranjal Dubey" />
+      <link href="/projects/index.xml" rel="feed" type="application/rss+xml" title="Pranjal Dubey" />
+      
+    
+    
+    <meta property="og:title" content="Projects" />
 <meta property="og:description" content="Personal website of Pranjal Dubey" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://pranjalworm.github.io/404.html" />
+<meta property="og:url" content="https://pranjalworm.github.io/projects/" />
 
-<meta itemprop="name" content="404 Page not found">
+<meta itemprop="name" content="Projects">
 <meta itemprop="description" content="Personal website of Pranjal Dubey"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="404 Page not found"/>
+<meta name="twitter:title" content="Projects"/>
 <meta name="twitter:description" content="Personal website of Pranjal Dubey"/>
 
 	
@@ -47,8 +52,10 @@
 
     
 
-  <header>
-    <div class="bg-black">
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://pranjalworm.github.io/images/home.jpg');">
+    <div class="bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -120,17 +127,61 @@
   </div>
 </nav>
 
+      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
+          Projects
+        </h1>
+        
+      </div>
     </div>
   </header>
 
 
     <main class="pb7" role="main">
       
-    <article class="center cf pv5 measure-wide-l">
-      <h1>
-        This is not the page you were looking for
-      </h1>
-    </article>
+  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Projects</span>
+    <h1 class="f3 near-black">
+      <a href="https://pranjalworm.github.io/projects/css-filter-generator/" class="link black dim">
+        Css Filter Generator
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Project website: https://pranjaldubey.com/css-filter-generator/
+This project is based off Barrett Sonntag&rsquo;s codepen.
+The problem I faced when using Barrett&rsquo;s version was that I had to try multiple times (sometimes 10-20 times) to get a filter value with loss &lt;= 1. So I created a version where the computation logic keeps spitting filter values till the time it hits a loss of less than equal to 1.
+In addition to that I placed all the computation logic inside a web worker so that it doesn&rsquo;t put strain on the main thread.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Projects</span>
+    <h1 class="f3 near-black">
+      <a href="https://pranjalworm.github.io/projects/pranjal-dubey-photography/" class="link black dim">
+        Pranjal Dubey Photography
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Project website: https://pranjaldubey.photography
+This project is an attempt to document my photography. It&rsquo;s an open source project and you can checkout the source code here.
+I chose StencilJS to create the website over any fancy library/framework because I wanted to have complete end-to-end control over the UI/UX as well as the underlying driving mechanism.
+It&rsquo;s still a work in progress&hellip;
+    </div>
+  </div>
+</div>
+</div>
+      
+    </section>
+
+</article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">

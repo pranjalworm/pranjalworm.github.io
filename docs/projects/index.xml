@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pranjal Dubey</title>
-    <link>https://pranjalworm.github.io/</link>
-    <description>Recent content on Pranjal Dubey</description>
+    <title>Projects on Pranjal Dubey</title>
+    <link>https://pranjalworm.github.io/projects/</link>
+    <description>Recent content in Projects on Pranjal Dubey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Mar 2021 16:30:06 +0530</lastBuildDate><atom:link href="https://pranjalworm.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Mar 2021 16:30:06 +0530</lastBuildDate><atom:link href="https://pranjalworm.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Css Filter Generator</title>
       <link>https://pranjalworm.github.io/projects/css-filter-generator/</link>
@@ -29,28 +29,6 @@ In addition to that I placed all the computation logic inside a web worker so th
 This project is an attempt to document my photography. It&amp;rsquo;s an open source project and you can checkout the source code here.
 I chose StencilJS to create the website over any fancy library/framework because I wanted to have complete end-to-end control over the UI/UX as well as the underlying driving mechanism.
 It&amp;rsquo;s still a work in progress&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://pranjalworm.github.io/posts/hello-world/</link>
-      <pubDate>Thu, 18 Mar 2021 21:33:21 +0530</pubDate>
-      
-      <guid>https://pranjalworm.github.io/posts/hello-world/</guid>
-      <description>Mandatory Hello World post!
-Just getting started with blogging. You&amp;rsquo;ll see a lot more stuff here soon.</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://pranjalworm.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://pranjalworm.github.io/about/</guid>
-      <description>I am a programmer.
-I am big time into photography.
-I like reading almost anything interesting I can get my hands on.
-I love traveling.</description>
     </item>
     
   </channel>
