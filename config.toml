@@ -5,6 +5,7 @@ title = "Pranjal Dubey"
 theme = "ananke"
 publishdir = "./docs"
 
+SectionPagesMenu = "main"
 enableRobotsTXT = true
 
 [sitemap]
