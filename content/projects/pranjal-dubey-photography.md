@@ -11,4 +11,4 @@ This project is an attempt to document my photography. It's an open source proje
 
 I chose [StencilJS](https://https://stenciljs.com/ "StencilJS") to create the website over any fancy library/framework because I wanted to have complete end-to-end control over the UI/UX as well as the underlying driving mechanism.
 
-It's still a work in progress...
+It's still a work in progress.
