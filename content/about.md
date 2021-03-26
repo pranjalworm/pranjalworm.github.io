@@ -5,10 +5,11 @@ type: page
 menu: main
 ---
 
-![alt text](https://pranjalworm.github.io/images/pranjal-dubey.jpg "Pranjal Dubey")
+![Pranjal Dubey](https://pranjalworm.github.io/images/pranjal-dubey.jpg "Pranjal Dubey")
 
+Welcome to my little home on the Internet.
 
-I am a programmer.
+I am a programmer by profession.
 
 I am big time into photography.
 

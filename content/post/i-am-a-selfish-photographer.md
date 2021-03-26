@@ -149,3 +149,4 @@ Just like Bukowski, his poem is also quite controversial. It can be argued that 
 
 But I think for me it rings quite close to what I am like as a creative person. I am usually not able to force myself to create photographs. 
 
+I am not dependent on photography for my survival as I am a programmer by profession and that gives me the freedom of choosing my paid photoshoots.
