@@ -21,13 +21,13 @@ After college I moved to Bangalore (bye-bye Mathura) to work in a startup and th
 
 ![Bangalore tech park](https://pranjalworm.github.io/images/bangalore-office.jpg "Bangalore tech park")
 
-Bangalore is a really nice city to live in (that is if you can tolerate the traffic). The weather is mostly pleasant and geographically it's located right in the middle of South India, so there are a lot of places to visit if you like traveling.
+Bangalore is a really nice city to live in (that is if you can tolerate the traffic). The weather is mostly pleasant and geographically it's located right in the middle of South India, so there are a lot of easily accessible places nearby if you like traveling.
 
 Now that I was finally a "Software Engineer" by profession, it was fun to live in the Coding Capital of India. When we went to hangout in the local cafes, it was quite common to hear phrases like, "server response", "API timeout" and "production phat gaya" from the nearby tables.
 
 Living amongst that many pro-techies nurtures the baby-techie within yourself. So I started thinking about creating my own personal website. My little home on the Internet. I started writing some code using Google's AMP tech because I wanted it to be crazy fast. I remember putting a lot of effort into it initially, but for some reasons which I don't clearly remember now it lost traction and I eventually shut down the domain.
 
-Then sometime back I deleted my Facebook account (because obviously) and also I permanently lost access to my Twitter account because I forgot where I saved the 2FA codes. May your ghost always live [@pranjalworm](https://twitter.com/pranjalworm).
+Then sometime back I deleted my Facebook account (because obviously) and also I permanently lost access to my Twitter account because I forgot where I saved the 2FA codes. May your ghost continue to live on [@pranjalworm](https://twitter.com/pranjalworm).
 
 I irregularly post on my [Instagram account](https://www.instagram.com/pranjalworm). I liked the original idea of Instagram, a social network for artists, but I absolutely abhor the pile of shit it has eventually turned into. Thanks again Facebook.
 

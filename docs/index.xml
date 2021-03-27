@@ -1,60 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pranjal Dubey</title>
-    <link>https://pranjalworm.github.io/</link>
-    <description>Recent content on Pranjal Dubey</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 19 Mar 2021 16:30:06 +0530</lastBuildDate><atom:link href="https://pranjalworm.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Pranjal Dubey Photography</title>
-      <link>https://pranjalworm.github.io/projects/pranjal-dubey-photography/</link>
-      <pubDate>Fri, 19 Mar 2021 16:30:06 +0530</pubDate>
-      
-      <guid>https://pranjalworm.github.io/projects/pranjal-dubey-photography/</guid>
-      <description>Project website: https://pranjaldubey.photography
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pranjal Dubey</title><link>https://pranjalworm.github.io/</link><description>Recent content on Pranjal Dubey</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 19 Mar 2021 16:30:06 +0530</lastBuildDate><atom:link href="https://pranjalworm.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Pranjal Dubey Photography</title><link>https://pranjalworm.github.io/projects/pranjal-dubey-photography/</link><pubDate>Fri, 19 Mar 2021 16:30:06 +0530</pubDate><guid>https://pranjalworm.github.io/projects/pranjal-dubey-photography/</guid><description>Project website: https://pranjaldubey.photography
 This project is an attempt to document my photography. It&amp;rsquo;s an open source project and you can checkout the source code here.
 I chose StencilJS to create the website over any fancy library/framework because I wanted to have complete end-to-end control over the UI/UX as well as the underlying driving mechanism.
-It&amp;rsquo;s still a work in progress.</description>
-    </item>
-    
-    <item>
-      <title>CSS Filter Generator</title>
-      <link>https://pranjalworm.github.io/projects/css-filter-generator/</link>
-      <pubDate>Fri, 19 Mar 2021 14:25:34 +0530</pubDate>
-      
-      <guid>https://pranjalworm.github.io/projects/css-filter-generator/</guid>
-      <description>Project website: https://pranjaldubey.com/css-filter-generator/
+It&amp;rsquo;s still a work in progress.</description></item><item><title>CSS Filter Generator</title><link>https://pranjalworm.github.io/projects/css-filter-generator/</link><pubDate>Fri, 19 Mar 2021 14:25:34 +0530</pubDate><guid>https://pranjalworm.github.io/projects/css-filter-generator/</guid><description>Project website: https://pranjaldubey.com/css-filter-generator/
 This project is based off Barrett Sonntag&amp;rsquo;s codepen.
 The problem I faced when using Barrett&amp;rsquo;s version was that I had to try multiple times (sometimes 10-20 times) to get a filter value with loss &amp;lt;= 1. So I created a version where the computation logic keeps spitting filter values till the time it hits a loss of less than equal to 1.
-In addition to that I placed all the computation logic inside a web worker so that it doesn&amp;rsquo;t put strain on the main thread.</description>
-    </item>
-    
-    <item>
-      <title>Mandatory Hello World Post</title>
-      <link>https://pranjalworm.github.io/post/mandatory-hello-world-post/</link>
-      <pubDate>Thu, 18 Mar 2021 21:33:21 +0530</pubDate>
-      
-      <guid>https://pranjalworm.github.io/post/mandatory-hello-world-post/</guid>
-      <description>&amp;ldquo;Hello World!&amp;rdquo;
+In addition to that I placed all the computation logic inside a web worker so that it doesn&amp;rsquo;t put strain on the main thread.</description></item><item><title>Mandatory Hello World Post</title><link>https://pranjalworm.github.io/post/mandatory-hello-world-post/</link><pubDate>Thu, 18 Mar 2021 21:33:21 +0530</pubDate><guid>https://pranjalworm.github.io/post/mandatory-hello-world-post/</guid><description>&amp;ldquo;Hello World!&amp;rdquo;
 So here it goes.
-I did a lot of beginner-level coding in C in my first year at college, it was nice and fun, but then I discovered web development around the start of my second year and immediately I was super-hooked. I remember creating a single index.html page with my name on it and then running to my mother to tell her that I made my first very own webpage!</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://pranjalworm.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://pranjalworm.github.io/about/</guid>
-      <description>Welcome to my little home on the Internet.
+I did a lot of beginner-level coding in C in my first year at college, it was nice and fun, but then I discovered web development around the start of my second year and immediately I was super-hooked. I remember creating a single index.html page with my name on it and then running to my mother to tell her that I made my first very own webpage!</description></item><item><title>About me</title><link>https://pranjalworm.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://pranjalworm.github.io/about/</guid><description>Welcome to my little home on the Internet.
 I am a programmer by profession.
 I am big time into photography.
 I like reading almost anything interesting I can get my hands on.
 I love traveling.
-Feel free to ping me at hi@pranjaldubey.com.</description>
-    </item>
-    
-  </channel>
-</rss>
+Feel free to ping me at hi@pranjaldubey.com.</description></item></channel></rss>
