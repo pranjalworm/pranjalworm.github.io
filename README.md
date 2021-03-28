@@ -1,2 +1,2 @@
 # pranjalworm.github.io
-My website
+My personal blogging website.

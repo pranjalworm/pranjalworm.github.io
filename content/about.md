@@ -5,7 +5,7 @@ type: page
 menu: main
 ---
 
-![Pranjal Dubey](https://pranjalworm.github.io/images/pranjal-dubey.jpg "Pranjal Dubey")
+![Pranjal Dubey](https://pranjaldubey.com/images/pranjal-dubey.jpg "Pranjal Dubey")
 
 This website is my little home on the Internet.
 
