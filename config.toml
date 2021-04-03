@@ -14,7 +14,7 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
 
 [params]
-  description = "Personal website of Pranjal Dubey"
+  description = "Pranjal Dubey's personal blogging website"
   featured_image = "./images/home.jpg"
   github = "https://github.com/pranjalworm"
   instagram = "https://www.instagram.com/pranjalworm/"

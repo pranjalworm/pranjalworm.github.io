@@ -145,8 +145,11 @@ There's a poem by Charles Bukowski
 
 *and there never was.*
 
-Just like Bukowski, his poem is also quite controversial. It can be argued that people are not *born* writers, photographers & painters. Maybe they are naturally better than others at doing something but it's only through their sheer hard work they are able to create art which will make you stop and take notice and think. You have to push yourself to the very limits and even beyond that to create something which is truly a masterpiece.
+Just like Bukowski, his poem is also quite controversial. It can be argued that people are not *born* writers, photographers & painters. Maybe they are naturally better than others at doing something but it's only through their sheer hard work they are able to create art which make people stop and take notice and think. They push themselves to the very limits and even beyond that to create something which is truly a masterpiece.
 
 But I think for me it rings quite close to what I am like as a creative person. I am usually not able to force myself to create photographs. 
 
 I am not dependent on photography for my survival as I am a programmer by profession and that gives me the freedom of choosing my paid photoshoots.
+
+
+![Pranjal Dubey's Self Portrait](http://localhost:1313/images/self-portrait.webp "Self Portrait")
