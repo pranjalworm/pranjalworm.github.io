@@ -1,1 +1,0 @@
-### Coder. Photographer. Reader. Traveler.
