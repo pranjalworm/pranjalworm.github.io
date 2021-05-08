@@ -5,6 +5,8 @@ title: "Pranjal Dubey Photography"
 draft: false
 ---
 
+![Pranjal Dubey Photography](/images/pranjal-dubey-photography-thumb.webp "Silhouette of a man")
+
 Project website: https://pranjaldubey.photography
 
 This project is an attempt to document my photography. It's an open source project and you can checkout the source code [here](https://github.com/pranjalworm/click "Source code of Pranjal Dubey Photography").

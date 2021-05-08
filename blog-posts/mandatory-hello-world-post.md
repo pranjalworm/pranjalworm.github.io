@@ -19,7 +19,7 @@ That project taught me a ton of things. Like it was a better experience if I use
 
 After college I moved to Bangalore (bye-bye Mathura) to work in a startup and there I started learning how things were done "professionally". I think I was extremely lucky to end up there. The CTO of the startup was a supergeek. He maintained a very high level of coding standard throughout the company and all of us engineers rightfully deified him. We saw tears in his eyes once when he saw one of our senior developers write really bad code. I remember we used to say in reference to the CTO, "He's not a coder, he's an artist". Ever since then I've never come across any programmer who cares so much about code.
 
-![Bangalore tech park](https://pranjaldubey.com/images/bangalore-office.jpg "Bangalore tech park")
+![Bangalore tech park](/images/bangalore-office.jpg "Bangalore tech park")
 
 Bangalore is a really nice city to live in (that is if you can tolerate the traffic). The weather is mostly pleasant and geographically it's located right in the middle of South India, so there are a lot of easily accessible places nearby if you like traveling.
 
