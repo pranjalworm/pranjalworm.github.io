@@ -17,4 +17,4 @@ But a while back I noticed that StencilJS is gradually losing steam. People are 
 
 Currently my website has a bunch of performance and UX issues and I'm getting a little tired of developing everything from scratch. So I have looked around and [NextJS](https://nextjs.org/ "NextJS") seems to be the perfect alternative. It has excellent support for developing image heavy websites, it's extensively documented and also there is a lot of traction for it in the market.
 
-I am going to port this project's entire codebase to NextJS. It's going to take a lot of sweat and blood to do this migration but I think it'll be beneficial in the long run. 
+I am going to port this project's entire codebase to NextJS. It's going to take a lot of sweat and tears to do this migration but I think it'll be beneficial in the long run. 
