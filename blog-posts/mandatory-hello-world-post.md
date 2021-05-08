@@ -7,6 +7,9 @@ description: "Well it would be almost rude from the perspective of a programmer 
 
 "Hello World!"
 
+![Pranjal Dubey](/images/pranjal-dubey.webp "Pranjal Dubey")
+##### That's me
+
 So here it goes.
 
 I did a lot of beginner-level coding in C in my first year at college, it was nice and fun, but then I discovered web development around the start of my second year and immediately I was super-hooked. I remember creating a single `index.html` page with my name on it and then running to my mother to tell her that I made my first very own webpage! It was that big of a deal for me at the time. FYI, my mother had no clue what "webpages" were and I am pretty sure she still doesn't know. Although she knows what "websites" are 😄.
@@ -19,7 +22,9 @@ That project taught me a ton of things. Like it was a better experience if I use
 
 After college I moved to Bangalore (bye-bye Mathura) to work in a startup and there I started learning how things were done "professionally". I think I was extremely lucky to end up there. The CTO of the startup was a supergeek. He maintained a very high level of coding standard throughout the company and all of us engineers rightfully deified him. We saw tears in his eyes once when he saw one of our senior developers write really bad code. I remember we used to say in reference to the CTO, "He's not a coder, he's an artist". Ever since then I've never come across any programmer who cares so much about code.
 
-![Bangalore tech park](/images/bangalore-office.jpg "Bangalore tech park")
+![Bangalore tech park](/images/bangalore-office.webp "Bangalore tech park")
+
+##### My office campus in Bangalore.
 
 Bangalore is a really nice city to live in (that is if you can tolerate the traffic). The weather is mostly pleasant and geographically it's located right in the middle of South India, so there are a lot of easily accessible places nearby if you like traveling.
 

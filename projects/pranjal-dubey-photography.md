@@ -1,5 +1,5 @@
 ---
-date: "2021-05-08"
+date: "2021-05-01"
 description: "An ongoing attempt to document my photography."
 title: "Pranjal Dubey Photography"
 draft: false
