@@ -1,0 +1,11 @@
+---
+title: "A Dream 10 Years in the Making"
+date: "2021-04-16"
+draft: true
+---
+
+Recently I bought a new Macbook Pro with the M1 chip. To some it might sound trivial but for me it was a dream 10 years in the making. Let me tell you how it came fruition.
+
+I grew up fascinated with Apple and its products. The first ever Apple product and that used was the iPod Shuffle. Cute little thing with no display and a dead simple button interface. I still have it lying around somewhere in one of table's drawers. The small orange light still glows up when I try to connect but it doesn't respond otherwise. I used that gadget quite extensively all the while getting interested in Apple, the company.
+
+My next interaction with an Apple product happened when a (rich) friend bought an iPhone 3GS. It was such a marvelous piece of beauty. I fell in love with the hardware and software; the Cover Flow UI for showing album art covers, the way lists bounced a little when you reached the end, the phone felt so premium to hold and the feather touch did actually work as advertised.
