@@ -55,10 +55,6 @@
   margin: 0 0 1.25rem;
 }
 
-.listItem img {
-  margin-bottom: 20px;
-}
-
 .description {
   color: #424242;
   font-size: 1rem;
@@ -73,4 +69,17 @@
 .content {
   color: #424242;
   font-size: 1rem;
+}
+
+.seeAll {
+  margin-bottom: 30px;
+}
+
+.seeAll > a {
+  color: #e87d13;
+  text-decoration: none;
+}
+
+.seeAll > a:hover {
+  text-decoration: underline;
 }

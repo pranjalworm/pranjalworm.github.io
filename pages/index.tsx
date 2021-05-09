@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import { PostsService, PostType } from '../services/posts.service'
+import { DefaultPostCount, PostsService, PostType } from '../services/posts.service'
 import Link from 'next/link'
-import Date from '../components/date'
 import { GetStaticProps } from 'next'
+import React from 'react'
+import SectionList from '../components/section-list'
 
 export default function Home({ allPostsData }: {
   allPostsData: {
@@ -42,70 +43,44 @@ export default function Home({ allPostsData }: {
       </section>
 
       {/* Photo Blog */}
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Photo Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.photoPostsData.map(({ id, date, title, description }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/photo-blog/${id}`}>
-                <a>{title}</a>
-              </Link>
+      <SectionList
+        sectionHeading='Photo Blogs'
+        postType={'photo-blog' as PostType}
+        postsData={allPostsData.photoPostsData}>
+      </SectionList>
 
-              <div className={utilStyles.description}>
-                {description}
-              </div>
-
-              <small className={utilStyles.note}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <div className={utilStyles.seeAll}>
+        <Link href={`/photo-blog/`}>
+          <a>all photo blogs →</a>
+        </Link>
+      </div>
 
       {/* Blog Posts */}
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog Posts</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.blogPostsData.map(({ id, date, title, description }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/blog-posts/${id}`}>
-                <a>{title}</a>
-              </Link>
+      <SectionList
+        sectionHeading='Blog Posts'
+        postType={'blog-posts' as PostType}
+        postsData={allPostsData.blogPostsData}>
+      </SectionList>
 
-              <div className={utilStyles.description}>
-                {description}
-              </div>
+      <div className={utilStyles.seeAll}>
+        <Link href={`/blog-posts/`}>
+          <a>all blog posts →</a>
+        </Link>
+      </div>
 
-              <small className={utilStyles.note}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
 
       {/* Project Posts */}
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Projects</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.projectPostsData.map(({ id, date, title, description }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/projects/${id}`}>
-                <a>{title}</a>
-              </Link>
+      <SectionList
+        sectionHeading='Projects'
+        postType={'projects' as PostType}
+        postsData={allPostsData.projectPostsData}>
+      </SectionList>
 
-              <div className={utilStyles.description}>
-                {description}
-              </div>
-
-              <small className={utilStyles.note}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <div className={utilStyles.seeAll}>
+        <Link href={`/projects/`}>
+          <a>all projects →</a>
+        </Link>
+      </div>
 
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -130,9 +105,9 @@ export default function Home({ allPostsData }: {
 
 export const getStaticProps: GetStaticProps = async () => {
 
-  const photoPostsData = PostsService.getSortedPostsData(PostType.PhotoBlog)
-  const blogPostsData = PostsService.getSortedPostsData(PostType.BlogPost)
-  const projectPostsData = PostsService.getSortedPostsData(PostType.Project)
+  const photoPostsData = PostsService.getSortedPostsData(PostType.PhotoBlog, DefaultPostCount)
+  const blogPostsData = PostsService.getSortedPostsData(PostType.BlogPost, DefaultPostCount)
+  const projectPostsData = PostsService.getSortedPostsData(PostType.Project, DefaultPostCount)
 
   return {
     props: {

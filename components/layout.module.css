@@ -13,3 +13,12 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.backToHome > a {
+  color: #e87d13;
+  text-decoration: none;
+}
+
+.backToHome > a:hover {
+  text-decoration: underline;
+}

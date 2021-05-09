@@ -1,9 +1,7 @@
-import Layout from '../../components/layout'
 import { PostsService, PostType } from '../../services/posts.service'
-import Head from 'next/head'
-import Date from '../../components/date'
-import utilStyles from '../../styles/utils.module.css'
 import { GetStaticProps, GetStaticPaths } from 'next'
+import React from 'react'
+import PostContent from '../../components/post-content'
 
 const titleSuffix = 'Pranjal Dubey Project'
 
@@ -16,19 +14,15 @@ export default function Projects({
     contentHtml: string
   }
 }) {
+
+  const pageTitle = `${postData.title} - ${titleSuffix}`
+
   return (
-    <Layout>
-      <Head>
-        <title>{postData.title} - {titleSuffix}</title>
-      </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.note}>
-          <Date dateString={postData.date} />
-        </div>
-        <div className={utilStyles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>
-    </Layout>
+    <PostContent
+      pageTitle={pageTitle}
+      date={postData.date}
+      contentHtml={postData.contentHtml}>
+    </PostContent>
   )
 }
 

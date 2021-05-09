@@ -5,6 +5,8 @@ import remark from 'remark'
 import html from 'remark-html'
 import { isProduction } from '../utils'
 
+export const DefaultPostCount = 3
+
 export enum PostType {
   BlogPost = 'blog-posts',
   Project = 'projects',
@@ -36,15 +38,32 @@ export namespace PostsService {
     return matterResult.data.draft
   }
 
+  const createPostData = (fileName: string, matterResult: any) => {
 
-  export function getSortedPostsData(postType: PostType) {
+    // Remove ".md" from file name to get id
+    const id = fileName.replace(/\.md$/, '')
+
+    return {
+      id,
+      ...(matterResult.data as { date: string; title: string, draft: boolean })
+    }
+  }
+
+
+  export function getSortedPostsData(postType: PostType, count?: number) {
 
     const pathname = getPostTypeDirectory(postType)
     const fileNames = fs.readdirSync(pathname)
 
+    const filesCount = fileNames.length
+    const postsCount = count && count <= filesCount ? count : fileNames.length
+
     const allPostsData = [];
 
-    for (let i = 0; i < fileNames.length; i++) {
+    let i = 0
+    let selectedPostsCount = 0
+
+    while (i < filesCount && selectedPostsCount < postsCount) {
 
       const fileName = fileNames[i];
 
@@ -55,19 +74,18 @@ export namespace PostsService {
       // Use gray-matter to parse the post metadata section
       const matterResult = matter(fileContents)
 
-      if (!isProduction() || !isInDraftPhase(matterResult)) {
-
-        // Remove ".md" from file name to get id
-        const id = fileName.replace(/\.md$/, '')
-        const postData = {
-          id,
-          ...(matterResult.data as { date: string; title: string, draft: boolean })
-        }
-
-        allPostsData.push(postData)
+      if (isProduction() && isInDraftPhase(matterResult)) {
+        i++
+        continue
       }
-    }
 
+      const postData = createPostData(fileName, matterResult)
+
+      allPostsData.push(postData)
+
+      selectedPostsCount++
+      i++
+    }
 
     // Sort posts by date
     return allPostsData.sort((a, b) => {
