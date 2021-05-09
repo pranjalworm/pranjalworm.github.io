@@ -34,11 +34,8 @@ Living amongst that many pro-techies nurtures the baby-techie within yourself. S
 
 Then sometime back I deleted my Facebook account (because obviously) and also I permanently lost access to my Twitter account because I forgot where I saved the 2FA codes. May your ghost continue to live on [@pranjalworm](https://twitter.com/pranjalworm).
 
-I irregularly post on my [Instagram account](https://www.instagram.com/pranjalworm). I liked the original idea of Instagram, a social network for artists, but I absolutely abhor the pile of shit it has eventually turned into. Thanks again Facebook.
+I irregularly post on my [Instagram account](https://www.instagram.com/pranjalworm). I liked Instagram's original idea, a social network for artists, but I absolutely abhor the pile of shit it has eventually turned into. Thanks again Facebook.
 
-So once again I felt the need to create something which I could call my own. About a year back, I started working on my [photography website](https://pranjaldubey.photography), but I can only put up my photography related stuff there. So I've started working on this website on which you are (hopefully) reading this blog post. I am keeping it simple this time and using NextJS' blog template to build it as I want to focus solely on the blogging part for now. I have big plans for this website too. Let's see how it goes.
+Once again I felt the need to create something which I could call my own. About a year back, I started working on my [photography website](https://pranjaldubey.photography), but I can only put up my photography related stuff there and also it's meant to be primarily seen by my potential photoshoot clients. So it's built from the ground up to emphasize the "professional" photographer aspect of me.
 
-
-
-
-
+So I've started working on this website also on which you are (hopefully) reading this blog post. This website is supposed to more funky. I can post anything and everything here and I don't have to care about clients and my perceived "image" here. I am keeping it simple this time and using NextJS' blog template to build it as I want to focus solely on the blogging part for now. I have big plans for this website too. Let's see how it goes.

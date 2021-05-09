@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData, PostType } from '../lib/posts'
+import { PostsService, PostType } from '../services/posts.service'
 import Link from 'next/link'
 import Date from '../components/date'
 import { GetStaticProps } from 'next'
@@ -99,8 +99,8 @@ export default function Home({ allPostsData }: {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const blogPostsData = getSortedPostsData(PostType.BlogPost)
-  const projectPostsData = getSortedPostsData(PostType.Project)
+  const blogPostsData = PostsService.getSortedPostsData(PostType.BlogPost)
+  const projectPostsData = PostsService.getSortedPostsData(PostType.Project)
 
   return {
     props: {

@@ -1,5 +1,5 @@
 import Layout from '../../components/layout'
-import { getAllPostIds, getPostData, PostType } from '../../lib/posts'
+import { PostsService, PostType } from '../../services/posts.service'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
@@ -31,7 +31,7 @@ export default function Projects({
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getAllPostIds(PostType.Project)
+  const paths = PostsService.getAllPostIds(PostType.Project)
   return {
     paths,
     fallback: false
@@ -39,7 +39,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postData = await getPostData(params.id as string, PostType.Project)
+  const postData = await PostsService.getPostData(params.id as string, PostType.Project)
   return {
     props: {
       postData
