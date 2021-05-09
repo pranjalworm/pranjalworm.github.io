@@ -3,29 +3,32 @@ import path from 'path'
 import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
+import { isProduction } from '../utils'
 
 export enum PostType {
   BlogPost = 'blog-posts',
-  Project = 'projects'
+  Project = 'projects',
+  PhotoBlog = 'photo-blog'
 }
 
 export namespace PostsService {
 
-  const createPostTypePath = (postType: PostType) => {
+  const getPostTypeDirectoryPath = (postType: PostType) => {
 
-    return path.join(process.cwd(), postType);
+    return path.join(process.cwd(), postType)
   }
 
 
   const postTypeDirectory = {
-    [PostType.BlogPost]: createPostTypePath(PostType.BlogPost),
-    [PostType.Project]: createPostTypePath(PostType.Project),
+    [PostType.BlogPost]: getPostTypeDirectoryPath(PostType.BlogPost),
+    [PostType.Project]: getPostTypeDirectoryPath(PostType.Project),
+    [PostType.PhotoBlog]: getPostTypeDirectoryPath(PostType.PhotoBlog),
   }
 
 
   const getPostTypeDirectory = (postType: PostType) => {
 
-    return postTypeDirectory[postType];
+    return postTypeDirectory[postType]
   }
 
   const isInDraftPhase = (matterResult: any) => {
@@ -52,7 +55,7 @@ export namespace PostsService {
       // Use gray-matter to parse the post metadata section
       const matterResult = matter(fileContents)
 
-      if (!isInDraftPhase(matterResult)) {
+      if (!isProduction() || !isInDraftPhase(matterResult)) {
 
         // Remove ".md" from file name to get id
         const id = fileName.replace(/\.md$/, '')

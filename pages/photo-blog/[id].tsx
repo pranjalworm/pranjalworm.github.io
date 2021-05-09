@@ -5,9 +5,9 @@ import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
-const titleSuffix = 'Pranjal Dubey Project'
+const titleSuffix = 'Pranjal Dubey Photo Blog'
 
-export default function Projects({
+export default function PhotoBlog({
   postData
 }: {
   postData: {
@@ -33,7 +33,7 @@ export default function Projects({
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = PostsService.getAllPostIds(PostType.Project)
+  const paths = PostsService.getAllPostIds(PostType.PhotoBlog)
   return {
     paths,
     fallback: false
@@ -41,7 +41,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postData = await PostsService.getPostData(params.id as string, PostType.Project)
+  const postData = await PostsService.getPostData(params.id as string, PostType.PhotoBlog)
   return {
     props: {
       postData

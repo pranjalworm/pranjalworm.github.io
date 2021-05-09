@@ -5,6 +5,8 @@ import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
+const titleSuffix = 'Pranjal Dubey Blog Post'
+
 export default function BlogPosts({
   postData
 }: {
@@ -17,7 +19,7 @@ export default function BlogPosts({
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{postData.title} - {titleSuffix}</title>
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>

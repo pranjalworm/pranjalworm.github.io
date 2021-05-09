@@ -8,6 +8,12 @@ import { GetStaticProps } from 'next'
 
 export default function Home({ allPostsData }: {
   allPostsData: {
+    photoPostsData: {
+      date: string
+      title: string
+      id: string,
+      description?: string
+    }[],
     blogPostsData: {
       date: string
       title: string
@@ -35,6 +41,29 @@ export default function Home({ allPostsData }: {
         </p>
       </section>
 
+      {/* Photo Blog */}
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Photo Blog</h2>
+        <ul className={utilStyles.list}>
+          {allPostsData.photoPostsData.map(({ id, date, title, description }) => (
+            <li className={utilStyles.listItem} key={id}>
+              <Link href={`/photo-blog/${id}`}>
+                <a>{title}</a>
+              </Link>
+
+              <div className={utilStyles.description}>
+                {description}
+              </div>
+
+              <small className={utilStyles.note}>
+                <Date dateString={date} />
+              </small>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Blog Posts */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog Posts</h2>
         <ul className={utilStyles.list}>
@@ -56,6 +85,7 @@ export default function Home({ allPostsData }: {
         </ul>
       </section>
 
+      {/* Project Posts */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Projects</h2>
         <ul className={utilStyles.list}>
@@ -99,12 +129,15 @@ export default function Home({ allPostsData }: {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+
+  const photoPostsData = PostsService.getSortedPostsData(PostType.PhotoBlog)
   const blogPostsData = PostsService.getSortedPostsData(PostType.BlogPost)
   const projectPostsData = PostsService.getSortedPostsData(PostType.Project)
 
   return {
     props: {
       allPostsData: {
+        photoPostsData,
         blogPostsData,
         projectPostsData
       }
