@@ -5,7 +5,5 @@ export const getEnv = () => {
 
 export const isProduction = () => {
 
-  const env = getEnv()
-
-  return env === 'production'
+  return getEnv() === 'production'
 }

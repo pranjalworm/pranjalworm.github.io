@@ -1,7 +1,10 @@
 import { PostsService, PostType } from '../../services/posts.service'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import React from 'react'
-import PostContent from '../../components/post-content'
+import Layout from '../../components/layout'
+import Head from 'next/head'
+import Date from '../../components/date'
+import utilStyles from '../../styles/utils.module.css'
 
 const titleSuffix = 'Pranjal Dubey Photo Blog'
 
@@ -18,11 +21,18 @@ export default function PhotoBlog({
   const pageTitle = `${postData.title} - ${titleSuffix}`
 
   return (
-    <PostContent
-      pageTitle={pageTitle}
-      date={postData.date}
-      contentHtml={postData.contentHtml}>
-    </PostContent>
+    <Layout>
+      <Head>
+        <title>{pageTitle}</title>
+      </Head>
+      <article>
+        <h1 className={utilStyles.headingXl}>{pageTitle}</h1>
+        <div className={utilStyles.note}>
+          <Date dateString={postData.date} />
+        </div>
+        <div className={utilStyles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      </article>
+    </Layout>
   )
 }
 
