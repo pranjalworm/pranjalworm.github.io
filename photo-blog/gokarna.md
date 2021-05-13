@@ -12,11 +12,11 @@ description: "A blog post about my favourite place in India."
   </div>
 </div>
 
-The conductor yelled "Gokarna" and I jumped awake in the bus' upper sleeping berth, barely managing not to hit my head on the roof. I checked the time; I wasn't expecting to reach Gokarna at least for another half an hour. But here I was. I yelled back at him to wait for me to get off. I grabbed my stuff, stepped down into the bus' narrow aisle, managed to drag my traveling slippers with my feet and was almost out of the cabin when I remembered I forgot my earplugs in the side pocket of the berth where I was sleeping. I am forgetful like that. I went back and pulled out my precious earplugs and then finally stepped down onto an unmarked road at 5:30am in the morning.
+The conductor yelled "Gokarna" and I jumped awake in the bus' upper sleeping berth, barely managing not to hit my head on the roof. I checked the time; I wasn't expecting to reach Gokarna at least for another half an hour. But here I was. I yelled back at him to wait for me to get off. I grabbed my stuff, stepped down into the bus' narrow aisle, managed to drag my traveling slippers with my feet and was almost out of the cabin when I remembered I forgot my earplugs in the side pocket of the berth where I was sleeping. I am forgetful like that. I went back and pulled out my precious earplugs and then finally stepped down all alone onto an unmarked road at 5:30 in the morning.
 
-It was my second trip to Gokarna and the first "solo trip" of my life. As I was standing there, it felt quite strange as I was the only traveler who got off the bus at that stop, which is usually not the case. I had not been on this road on my previous trip but somehow I knew where to go. The sea has a way of calling out to you.
+This was my second trip to Gokarna and the first "solo trip" of my life. As I was standing there alone, it felt quite strange as I was the only traveler who got off the bus at that stop, which is usually not the case. I looked both ways, picked a direction and started walking. I had not been on this road on my previous trip but somehow I knew where to go. The sea has a way of calling out to you.
 
-Gokarna is a little town in Karnataka on the west coast of India. The first time I went there was in 2017 and since then I've been there four more times. 
+Gokarna is a little town in Karnataka on the west coast of India. The first time I went there was in 2017 and since then I've been there four more times.
 
 <div class="post-image-wrapper">
   <img src="/images/bicycle.webp" class="post-image" />
@@ -92,7 +92,7 @@ I've seen this kulfi vendor cycling on the main beach multiple times across my v
 <div class="post-image-wrapper">
   <img src="/images/man-on-phone.webp" class="post-image" alt="A man sitting on a log and talking on phone" />
   <div class="post-image-caption">
-    I like to imagine that the phone call went on for hours and hours.
+    I like to imagine the phone call went on for hours and hours.
   </div>
 </div>
 
@@ -144,7 +144,7 @@ I've seen this kulfi vendor cycling on the main beach multiple times across my v
 <div class="post-image-wrapper">
   <img src="/images/three-girlfriends.webp" class="post-image" alt="Three girlfriends sitting on the beach" />
   <div class="post-image-caption">
-    Glimpse from a bachelorette party.
+    Glimpse of a bachelorette party from far away.
   </div>
 </div>
 

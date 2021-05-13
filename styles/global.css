@@ -42,7 +42,7 @@ img {
 @media (min-width: 760px) {
 
   .post-image {
-    max-height: 60vh;
+    max-height: 75vh;
   }
 }
 
