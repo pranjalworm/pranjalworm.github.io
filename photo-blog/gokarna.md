@@ -1,6 +1,6 @@
 ---
 date: "2021-04-11"
-draft: false
+draft: true
 title: "Gokarna: An Ongoing Love Affair"
 description: "A blog post about my favourite place in India."
 ---
