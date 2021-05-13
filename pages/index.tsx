@@ -44,7 +44,7 @@ export default function Home({ allPostsData }: {
       </section>
 
       {/* Photo Blog */}
-      <SectionList
+      {/* <SectionList
         sectionHeading='Photo Blogs'
         postType={'photo-blog' as PostType}
         postsData={allPostsData.photoPostsData} />
@@ -53,7 +53,7 @@ export default function Home({ allPostsData }: {
         <Link href={`/photo-blog/`}>
           <a>all photo blogs →</a>
         </Link>
-      </div>
+      </div> */}
 
 
       {/* Blog Posts */}
@@ -62,11 +62,11 @@ export default function Home({ allPostsData }: {
         postType={'blog-posts' as PostType}
         postsData={allPostsData.blogPostsData} />
 
-      <div className={utilStyles.seeAll}>
+      {/* <div className={utilStyles.seeAll}>
         <Link href={`/blog-posts/`}>
           <a>all blog posts →</a>
         </Link>
-      </div>
+      </div> */}
 
 
       {/* Project Posts */}
@@ -75,11 +75,11 @@ export default function Home({ allPostsData }: {
         postType={'projects' as PostType}
         postsData={allPostsData.projectPostsData} />
 
-      <div className={utilStyles.seeAll}>
+      {/* <div className={utilStyles.seeAll}>
         <Link href={`/projects/`}>
           <a>all projects →</a>
         </Link>
-      </div>
+      </div> */}
 
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
