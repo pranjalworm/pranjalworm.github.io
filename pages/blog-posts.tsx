@@ -29,8 +29,7 @@ export default function PhotoBlog(
       titleSuffix={titleSuffix}
       pageHeading={pageHeading}
       postType={postType}
-      postsData={postsData}>
-    </PostList>
+      postsData={postsData} />
   )
 }
 

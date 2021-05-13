@@ -32,8 +32,7 @@ export default function PostList(
       <SectionList
         sectionHeading={pageHeading}
         postType={postType}
-        postsData={postsData}>
-      </SectionList>
+        postsData={postsData} />
 
     </Layout>
   )

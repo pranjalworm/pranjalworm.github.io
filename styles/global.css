@@ -25,3 +25,30 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.post-image-wrapper {
+  margin: 4rem auto;
+}
+
+.post-top-image-wrapper {
+  margin-top: 2rem;
+}
+
+.post-image {
+  margin: 0% auto;
+}
+
+/* for desktops */
+@media (min-width: 760px) {
+
+  .post-image {
+    max-height: 60vh;
+  }
+}
+
+.post-image-caption {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}

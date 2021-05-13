@@ -29,8 +29,7 @@ export default function Projects(
       titleSuffix={titleSuffix}
       pageHeading={pageHeading}
       postType={postType}
-      postsData={postsData}>
-    </PostList>
+      postsData={postsData} />
   )
 }
 

@@ -26,7 +26,7 @@ export default function Projects({
         <title>{pageTitle}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{pageTitle}</h1>
+        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.note}>
           <Date dateString={postData.date} />
         </div>

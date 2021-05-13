@@ -5,7 +5,7 @@ title: "Pranjal Dubey Photography"
 draft: false
 ---
 
-![Pranjal Dubey Photography](/images/pranjal-dubey-photography-thumb.webp "Silhouette of a man")
+![Silhouette of a fisherman](/images/pranjal-dubey-photography-thumb.webp "Silhouette of a fisherman")
 
 Project website: https://pranjaldubey.photography
 

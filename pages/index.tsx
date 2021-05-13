@@ -29,6 +29,7 @@ export default function Home({ allPostsData }: {
     }[]
   }
 }) {
+
   return (
     <Layout home>
 
@@ -46,8 +47,7 @@ export default function Home({ allPostsData }: {
       <SectionList
         sectionHeading='Photo Blogs'
         postType={'photo-blog' as PostType}
-        postsData={allPostsData.photoPostsData}>
-      </SectionList>
+        postsData={allPostsData.photoPostsData} />
 
       <div className={utilStyles.seeAll}>
         <Link href={`/photo-blog/`}>
@@ -55,12 +55,12 @@ export default function Home({ allPostsData }: {
         </Link>
       </div>
 
+
       {/* Blog Posts */}
       <SectionList
         sectionHeading='Blog Posts'
         postType={'blog-posts' as PostType}
-        postsData={allPostsData.blogPostsData}>
-      </SectionList>
+        postsData={allPostsData.blogPostsData} />
 
       <div className={utilStyles.seeAll}>
         <Link href={`/blog-posts/`}>
@@ -73,8 +73,7 @@ export default function Home({ allPostsData }: {
       <SectionList
         sectionHeading='Projects'
         postType={'projects' as PostType}
-        postsData={allPostsData.projectPostsData}>
-      </SectionList>
+        postsData={allPostsData.projectPostsData} />
 
       <div className={utilStyles.seeAll}>
         <Link href={`/projects/`}>
@@ -84,14 +83,11 @@ export default function Home({ allPostsData }: {
 
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>About me</h2>
+        <h2 className={utilStyles.headingLg}>About</h2>
 
         <div className={utilStyles.content}>
-          I am a programmer by profession.<br />
-          I am big time into photography.<br />
-          I like reading almost anything interesting I can get my hands on.<br />
-          I love traveling.<br />
-
+          Pranjal Dubey is a programmer and part time photographer.
+          He has kind of an OCD for reading almost anything interesting he can get his hands on.
           <p>
             Email: <a href="mailto:hi@pranjaldubey.com">hi@pranjaldubey.com</a><br />
             Twitter: <a href="https://twitter.com/pranjaldy">@pranjaldy</a>
