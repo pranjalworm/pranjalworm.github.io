@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "rimraf docs && NODE_ENV=production next build && NODE_ENV=production next export -o docs",
+    "postbuild": "next-sitemap",
     "start": "next start"
   },
   "dependencies": {
