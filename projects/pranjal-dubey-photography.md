@@ -5,7 +5,9 @@ title: "Pranjal Dubey Photography"
 draft: false
 ---
 
-![Silhouette of a fisherman](/images/pranjal-dubey-photography-thumb.webp "Silhouette of a fisherman")
+<div class="post-image-wrapper post-top-image-wrapper">
+  <img src="/images/pranjal-dubey-photography-thumb.webp" class="post-image" alt="Silhouette of a fisherman casting his net" />
+</div>
 
 Project website: https://pranjaldubey.photography
 
