@@ -1,12 +1,13 @@
 import { PostsService, PostType } from '../services/posts.service'
 import { GetStaticProps } from 'next'
 import React from 'react'
-import PostList from '../components/post-list'
+import PostList from '../components/post-list/post-list'
+import { Post } from '../common/interfaces'
 
 const titleSuffix = 'Blog Posts - Pranjal Dubey'
 const pageHeading = 'Blog Posts'
 
-export default function PhotoBlog(
+export default function BlogPost(
   {
     titleSuffix,
     pageHeading,
@@ -16,12 +17,7 @@ export default function PhotoBlog(
     titleSuffix: string,
     pageHeading: string,
     postType: PostType,
-    postsData: {
-      date: string
-      title: string
-      id: string,
-      description?: string
-    }[]
+    postsData: Post[]
   }) {
 
   return (

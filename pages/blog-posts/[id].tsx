@@ -1,10 +1,10 @@
 import { PostsService, PostType } from '../../services/posts.service'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import React from 'react'
-import Layout from '../../components/layout'
+import Layout from '../../components/layout/layout'
 import Head from 'next/head'
-import Date from '../../components/date'
-import utilStyles from '../../styles/utils.module.css'
+import Date from '../../components/date/date'
+import utilStyles from '../../common/utils.module.css'
 
 const titleSuffix = 'Pranjal Dubey Blog Post'
 

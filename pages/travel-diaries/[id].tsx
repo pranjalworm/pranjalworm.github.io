@@ -1,14 +1,14 @@
 import { PostsService, PostType } from '../../services/posts.service'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import React from 'react'
-import Layout from '../../components/layout'
+import Layout from '../../components/layout/layout'
 import Head from 'next/head'
-import Date from '../../components/date'
-import utilStyles from '../../styles/utils.module.css'
+import Date from '../../components/date/date'
+import utilStyles from '../../common/utils.module.css'
 
-const titleSuffix = 'Pranjal Dubey Photo Blog'
+const titleSuffix = 'Pranjal Dubey Travel Diary'
 
-export default function PhotoBlog({
+export default function TravelDiary({
   postData
 }: {
   postData: {
@@ -37,7 +37,7 @@ export default function PhotoBlog({
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = PostsService.getAllPostIds(PostType.PhotoBlog)
+  const paths = PostsService.getAllPostIds(PostType.TravelDiaries)
   return {
     paths,
     fallback: false
@@ -45,7 +45,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postData = await PostsService.getPostData(params.id as string, PostType.PhotoBlog)
+  const postData = await PostsService.getPostData(params.id as string, PostType.TravelDiaries)
   return {
     props: {
       postData

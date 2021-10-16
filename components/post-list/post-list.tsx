@@ -1,8 +1,9 @@
-import Layout from '../components/layout'
-import { PostType } from '../services/posts.service'
+import Layout from '../layout/layout'
+import { PostType } from '../../services/posts.service'
 import Head from 'next/head'
 import React from 'react'
-import SectionList from './section-list'
+import SectionList from '../section-list/section-list'
+import { Post } from '../../common/interfaces'
 
 export default function PostList(
   {
@@ -14,12 +15,7 @@ export default function PostList(
     titleSuffix: string,
     pageHeading: string,
     postType: PostType,
-    postsData: {
-      date: string
-      title: string
-      id: string,
-      description?: string
-    }[]
+    postsData: Post[]
   }) {
 
   return (

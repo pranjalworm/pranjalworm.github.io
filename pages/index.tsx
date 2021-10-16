@@ -1,32 +1,18 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
+import Layout, { siteTitle } from '../components/layout/layout'
+import utilStyles from '../common/utils.module.css'
 import { DefaultPostCount, PostsService, PostType } from '../services/posts.service'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
 import React from 'react'
-import SectionList from '../components/section-list'
+import SectionList from '../components/section-list/section-list'
+import { Post } from '../common/interfaces'
 
 export default function Home({ allPostsData }: {
   allPostsData: {
-    photoPostsData: {
-      date: string
-      title: string
-      id: string,
-      description?: string
-    }[],
-    blogPostsData: {
-      date: string
-      title: string
-      id: string,
-      description?: string
-    }[],
-    projectPostsData: {
-      date: string
-      title: string
-      id: string,
-      description?: string
-    }[]
+    travelPostsData: Post[],
+    blogPostsData: Post[],
+    projectPostsData: Post[]
   }
 }) {
 
@@ -43,17 +29,17 @@ export default function Home({ allPostsData }: {
         </p>
       </section>
 
-      {/* Photo Blog */}
-      {/* <SectionList
-        sectionHeading='Photo Blogs'
-        postType={'photo-blog' as PostType}
-        postsData={allPostsData.photoPostsData} />
+      {/* Travel Diaries*/}
+      <SectionList
+        sectionHeading='Travel Diaries'
+        postType={'travel-diaries' as PostType}
+        postsData={allPostsData.travelPostsData} />
 
       <div className={utilStyles.seeAll}>
-        <Link href={`/photo-blog/`}>
-          <a>all photo blogs →</a>
+        <Link href={`/travel-diaries/`}>
+          <a>all travel diaries →</a>
         </Link>
-      </div> */}
+      </div>
 
 
       {/* Blog Posts */}
@@ -62,11 +48,11 @@ export default function Home({ allPostsData }: {
         postType={'blog-posts' as PostType}
         postsData={allPostsData.blogPostsData} />
 
-      {/* <div className={utilStyles.seeAll}>
+      <div className={utilStyles.seeAll}>
         <Link href={`/blog-posts/`}>
           <a>all blog posts →</a>
         </Link>
-      </div> */}
+      </div>
 
 
       {/* Project Posts */}
@@ -75,11 +61,11 @@ export default function Home({ allPostsData }: {
         postType={'projects' as PostType}
         postsData={allPostsData.projectPostsData} />
 
-      {/* <div className={utilStyles.seeAll}>
+      <div className={utilStyles.seeAll}>
         <Link href={`/projects/`}>
           <a>all projects →</a>
         </Link>
-      </div> */}
+      </div>
 
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -101,14 +87,14 @@ export default function Home({ allPostsData }: {
 
 export const getStaticProps: GetStaticProps = async () => {
 
-  const photoPostsData = PostsService.getSortedPostsData(PostType.PhotoBlog, DefaultPostCount)
+  const travelPostsData = PostsService.getSortedPostsData(PostType.TravelDiaries, DefaultPostCount)
   const blogPostsData = PostsService.getSortedPostsData(PostType.BlogPost, DefaultPostCount)
   const projectPostsData = PostsService.getSortedPostsData(PostType.Project, DefaultPostCount)
 
   return {
     props: {
       allPostsData: {
-        photoPostsData,
+        travelPostsData,
         blogPostsData,
         projectPostsData
       }

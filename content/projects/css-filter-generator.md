@@ -3,9 +3,10 @@ date: "2021-03-19"
 description: "A tool to create css image filters. Useful for changing colors of SVG icons."
 title: "CSS Filter Generator"
 draft: false
+thumbnail: 'three-girlfriends.webp'
 ---
 
-Project website: https://pranjaldubey.com/css-filter-generator/
+Project website: [https://pranjaldubey.com/css-filter-generator/](https://pranjaldubey.com/css-filter-generator/ "Link to CSS Filter Generator")
 
 This is a tool to create css image filters, quite useful for changing colors of SVG icons.
 

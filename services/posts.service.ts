@@ -10,21 +10,21 @@ export const DefaultPostCount = 3
 export enum PostType {
   BlogPost = 'blog-posts',
   Project = 'projects',
-  PhotoBlog = 'photo-blog'
+  TravelDiaries = 'travel-diaries'
 }
 
 export namespace PostsService {
 
   const getPostTypeDirectoryPath = (postType: PostType) => {
 
-    return path.join(process.cwd(), postType)
+    return path.join(process.cwd(), 'content', postType)
   }
 
 
   const postTypeDirectory = {
     [PostType.BlogPost]: getPostTypeDirectoryPath(PostType.BlogPost),
     [PostType.Project]: getPostTypeDirectoryPath(PostType.Project),
-    [PostType.PhotoBlog]: getPostTypeDirectoryPath(PostType.PhotoBlog),
+    [PostType.TravelDiaries]: getPostTypeDirectoryPath(PostType.TravelDiaries),
   }
 
 
@@ -38,14 +38,14 @@ export namespace PostsService {
     return matterResult.data.draft
   }
 
-  const createPostData = (fileName: string, matterResult: any) => {
+  const getPostMetaData = (fileName: string, matterResult: any) => {
 
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '')
 
     return {
       id,
-      ...(matterResult.data as { date: string; title: string, draft: boolean })
+      ...(matterResult.data as { date: string; title: string, draft: boolean, thumbnail: string })
     }
   }
 
@@ -79,7 +79,7 @@ export namespace PostsService {
         continue
       }
 
-      const postData = createPostData(fileName, matterResult)
+      const postData = getPostMetaData(fileName, matterResult)
 
       allPostsData.push(postData)
 

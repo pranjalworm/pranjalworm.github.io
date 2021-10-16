@@ -1,7 +1,8 @@
 import { PostsService, PostType } from '../services/posts.service'
 import { GetStaticProps } from 'next'
 import React from 'react'
-import PostList from '../components/post-list'
+import PostList from '../components/post-list/post-list'
+import { Post } from '../common/interfaces'
 
 const titleSuffix = 'Projects - Pranjal Dubey'
 const pageHeading = 'Projects'
@@ -16,12 +17,7 @@ export default function Projects(
     titleSuffix: string,
     pageHeading: string,
     postType: PostType,
-    postsData: {
-      date: string
-      title: string
-      id: string,
-      description?: string
-    }[]
+    postsData: Post[]
   }) {
 
   return (

@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
+import utilStyles from '../../common/utils.module.css'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const name = 'Pranjal Dubey'
 export const siteTitle = 'Pranjal Dubey'
@@ -11,6 +11,9 @@ export default function Layout({ children, home }: {
   children: React.ReactNode
   home?: boolean
 }) {
+
+  const router = useRouter();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -60,10 +63,10 @@ export default function Layout({ children, home }: {
       <main>{children}</main>
 
       {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
+        <div className={styles.backToHome} onClick={() => {
+          router.back()
+        }}>
+          <a>← Go back</a>
         </div>
       )}
     </div>

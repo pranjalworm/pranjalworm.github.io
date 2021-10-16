@@ -3,13 +3,14 @@ date: "2021-05-01"
 description: "An ongoing attempt to document my photography."
 title: "Pranjal Dubey Photography"
 draft: false
+thumbnail: 'three-girlfriends.webp'
 ---
 
 <div class="post-image-wrapper post-top-image-wrapper">
   <img src="/images/pranjal-dubey-photography-thumb.webp" class="post-image" alt="Silhouette of a fisherman casting his net" />
 </div>
 
-Project website: https://pranjaldubey.photography
+Project website: [https://pranjaldubey.photography](https://pranjaldubey.photography "Link to Pranjal Dubey Photography")
 
 This project is an attempt to document my photography. It's an open source project and you can checkout the source code [here](https://github.com/pranjalworm/click "Source code of Pranjal Dubey Photography").
 

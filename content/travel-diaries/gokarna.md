@@ -1,8 +1,9 @@
 ---
 date: "2021-04-11"
 draft: true
-title: "Gokarna: An Ongoing Love Affair"
-description: "A blog post about my favourite place in India."
+title: "My First Solo Trip"
+description: 'The quick brown fox jumps right over the lazy dog'
+thumbnail: 'three-girlfriends.webp'
 ---
 
 <div class="post-image-wrapper post-top-image-wrapper">
@@ -11,12 +12,13 @@ description: "A blog post about my favourite place in India."
     Let me paint some reflections.
   </div>
 </div>
-
 The conductor yelled "Gokarna" and I jumped awake in the bus' upper sleeping berth, barely managing not to hit my head on the roof. I checked the time; I wasn't expecting to reach Gokarna at least for another half an hour. But here I was. I yelled back at him to wait for me to get off. I grabbed my stuff, stepped down into the bus' narrow aisle, managed to drag my traveling slippers with my feet and was almost out of the cabin when I remembered I forgot my earplugs in the side pocket of the berth where I was sleeping. I am forgetful like that. I went back and pulled out my precious earplugs and then finally stepped down all alone onto an unmarked road at 5:30 in the morning.
 
-This was my second trip to Gokarna and the first "solo trip" of my life. As I was standing there alone, it felt quite strange as I was the only traveler who got off the bus at that stop, which is usually not the case. I looked both ways, picked a direction and started walking. I had not been on this road on my previous trip but somehow I knew where to go. The sea has a way of calling out to you.
+This was my second trip to Gokarna and the first "solo trip" of my life. I had come here with just a one way ticket and other than that I had no plans, no hotel bookings and even no expectations whatsoever. The "planned" part of the trip had ended as soon as I had stepped off that bus, which was a distant white spot by now down the road. It felt quite strange standing there alone. This was the first time when I was going to be responsible for all the decisions on a trip. "This is going to be fun", I thought to myself.
 
-Gokarna is a little town in Karnataka on the west coast of India. The first time I went there was in 2017 and since then I've been there four more times.
+I looked in both the directions, picked one and started walking. I had not been on this road on my previous trip but somehow I knew where to go. The sea has a way of calling out to you.
+
+Gokarna is a little town in Karnataka on the west coast of India. The first time I went there was in 2017 and since then I've been there four more times. There's something about that place which keeps pulling me back.
 
 <div class="post-image-wrapper">
   <img src="/images/bicycle.webp" class="post-image" />
@@ -26,7 +28,7 @@ Gokarna is a little town in Karnataka on the west coast of India. The first time
 </div>
 
 
-I've seen this kulfi vendor cycling on the main beach multiple times across my visits. I've never seen him up close and I have no idea what he looks like, but the next I see him, I am definitely going to him this photograph. I have a hunch that he will like it.
+I've seen this kulfi vendor cycling on the main beach multiple times across my visits. I've never seen him up close and I have no idea what his face looks like, but I think I'll recognise him the next I see him, I am going to give him this photograph. I have a hunch that he'll like it.
 
 
 <div class="post-image-wrapper">
@@ -50,10 +52,6 @@ I've seen this kulfi vendor cycling on the main beach multiple times across my v
     Beach dogs.
   </div>
 </div>
-
-
-
-
 
 
 <div class="post-image-wrapper">
@@ -142,7 +140,7 @@ I've seen this kulfi vendor cycling on the main beach multiple times across my v
 
 
 <div class="post-image-wrapper">
-  <img src="/images/three-girlfriends.webp" class="post-image" alt="Three girlfriends sitting on the beach" />
+  <img src="/imagesthree-girlfriends.webp" class="post-image" alt="Three girlfriends sitting on the beach" />
   <div class="post-image-caption">
     Glimpse of a bachelorette party from far away.
   </div>
