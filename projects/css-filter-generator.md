@@ -5,7 +5,7 @@ title: "CSS Filter Generator"
 draft: false
 ---
 
-Project website: https://pranjaldubey.com/css-filter-generator/
+Project website: [CSS Filter Generator](https://pranjaldubey.com/css-filter-generator/ "CSS Filter Generator")
 
 This is a tool to create css image filters, quite useful for changing colors of SVG icons.
 
