@@ -10,7 +10,7 @@ thumbnail: 'three-girlfriends.webp'
   <img src="/images/pranjal-dubey-photography-thumb.webp" class="post-image" alt="Silhouette of a fisherman casting his net" />
 </div>
 
-Project website: [https://pranjaldubey.photography](https://pranjaldubey.photography "Link to Pranjal Dubey Photography")
+Project website: [Pranjal Dubey Photography](https://pranjaldubey.photography "Pranjal Dubey Photography")
 
 This project is an attempt to document my photography. It's an open source project and you can checkout the source code [here](https://github.com/pranjalworm/click "Source code of Pranjal Dubey Photography").
 
