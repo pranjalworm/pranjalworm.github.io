@@ -2,7 +2,7 @@ import { PostsService, PostType } from '../services/posts.service'
 import { GetStaticProps } from 'next'
 import React from 'react'
 import PostList from '../components/post-list/post-list'
-import { Post } from '../common/interfaces'
+import { PostMeta } from '../common/interfaces'
 
 const titleSuffix = 'Travel Diaries - Pranjal Dubey'
 const pageHeading = 'Travel Diaries'
@@ -17,7 +17,7 @@ export default function TravelDiaries(
     titleSuffix: string,
     pageHeading: string,
     postType: PostType,
-    postsData: Post[]
+    postsData: PostMeta[]
   }) {
 
   return (

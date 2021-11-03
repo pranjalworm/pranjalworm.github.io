@@ -2,7 +2,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
   height: 300px;
   width: 250px;
   border: 1px solid #efefef;
@@ -10,6 +9,8 @@
   overflow: hidden;
   position: relative;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .card:hover {
@@ -32,7 +33,7 @@
   overflow: hidden;
   width: 100%;
   height: 50%;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 .titleWrapper {
@@ -42,15 +43,9 @@
   align-items: center;
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0,0,0,0) 100%);
-}
-
-.titleWrapper a {
   color: #fff;
   font-size: 0.9rem;
-}
-
-.titleWrapper a:hover {
-  text-decoration: none;
+  font-weight: 600;
 }
 
 .descriptionWrapper {

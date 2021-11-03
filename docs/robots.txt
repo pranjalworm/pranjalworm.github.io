@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://pranjaldubey.com
-
-# Sitemaps
-Sitemap: https://pranjaldubey.com/sitemap.xml

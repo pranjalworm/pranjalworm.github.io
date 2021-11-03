@@ -3,7 +3,7 @@ import { PostType } from '../../services/posts.service'
 import Head from 'next/head'
 import React from 'react'
 import SectionList from '../section-list/section-list'
-import { Post } from '../../common/interfaces'
+import { PostMeta } from '../../common/interfaces'
 
 export default function PostList(
   {
@@ -15,7 +15,7 @@ export default function PostList(
     titleSuffix: string,
     pageHeading: string,
     postType: PostType,
-    postsData: Post[]
+    postsData: PostMeta[]
   }) {
 
   return (

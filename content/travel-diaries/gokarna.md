@@ -3,7 +3,7 @@ date: "2021-04-11"
 draft: true
 title: "My First Solo Trip"
 description: 'The quick brown fox jumps right over the lazy dog'
-thumbnail: 'three-girlfriends.webp'
+thumbnail: 'solo-traveler.webp'
 ---
 
 <div class="post-image-wrapper post-top-image-wrapper">

@@ -3,7 +3,7 @@ date: "2021-05-01"
 description: "An ongoing attempt to document my photography."
 title: "Pranjal Dubey Photography"
 draft: false
-thumbnail: 'three-girlfriends.webp'
+thumbnail: 'pranjal-dubey-photography-thumb.webp'
 ---
 
 <div class="post-image-wrapper post-top-image-wrapper">

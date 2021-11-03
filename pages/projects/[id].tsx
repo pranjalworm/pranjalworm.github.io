@@ -1,39 +1,23 @@
 import { PostsService, PostType } from '../../services/posts.service'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import React from 'react'
-import Layout from '../../components/layout/layout'
-import Head from 'next/head'
-import Date from '../../components/date/date'
-import utilStyles from '../../common/utils.module.css'
+import { PostContent, PostMeta } from '../../common/interfaces'
+import Post from '../../components/post/post.component'
 
 const titleSuffix = 'Pranjal Dubey Project'
 
 export default function Projects({
-  postData
+  postContent,
+  suggestedPosts
 }: {
-  postData: {
-    title: string
-    date: string
-    contentHtml: string
-  }
+  postContent: PostContent,
+  suggestedPosts: PostMeta[]
 }) {
 
-  const pageTitle = `${postData.title} - ${titleSuffix}`
+  postContent.titleSuffix = titleSuffix
 
-  return (
-    <Layout>
-      <Head>
-        <title>{pageTitle}</title>
-      </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.note}>
-          <Date dateString={postData.date} />
-        </div>
-        <div className={utilStyles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>
-    </Layout>
-  )
+  return <Post postContent={postContent} suggestedPosts={suggestedPosts}
+    postType={PostType.Project} />
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -45,10 +29,16 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postData = await PostsService.getPostData(params.id as string, PostType.Project)
+
+  const postId = params.id as string
+  const postContent = await PostsService.getPostContent(postId, PostType.Project)
+  // const suggestedPosts = PostsService.getSuggestedPosts(PostType.Project, postId)
+  const suggestedPosts = []
+
   return {
     props: {
-      postData
+      postContent,
+      suggestedPosts
     }
   }
 }

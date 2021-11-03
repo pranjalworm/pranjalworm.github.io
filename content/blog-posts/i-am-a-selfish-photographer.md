@@ -3,7 +3,7 @@ title: "I am a Selfish Photographer"
 date: "2021-03-19"
 draft: true
 description: 'The quick brown fox jumps right over the lazy dog'
-thumbnail: 'three-girlfriends.webp'
+thumbnail: 'self-bw-portrait.webp'
 ---
 
 ![Pranjal Dubey's Self Portrait](https://pranjaldubey.com/images/self-bw-portrait.webp "Self Portrait")

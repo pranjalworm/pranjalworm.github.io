@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
 import { isProduction } from '../utils'
+import { PostMeta } from '../common/interfaces'
 
 export const DefaultPostCount = 3
 
@@ -37,6 +38,7 @@ export namespace PostsService {
 
     return matterResult.data.draft
   }
+
 
   const getPostMetaData = (fileName: string, matterResult: any) => {
 
@@ -113,7 +115,7 @@ export namespace PostsService {
   }
 
 
-  export async function getPostData(id: string, postType: PostType) {
+  export async function getPostContent(id: string, postType: PostType) {
 
     const pathname = getPostTypeDirectory(postType);
 
@@ -136,6 +138,29 @@ export namespace PostsService {
       contentHtml,
       ...(matterResult.data as { date: string; title: string })
     }
+  }
+
+
+  export const getSuggestedPosts = (postType: PostType, currentPostId: string): PostMeta[] => {
+
+    const allPosts = getSortedPostsData(postType)
+
+    let currentPostIndex: number
+
+    for (let i = 0; i < allPosts.length; i++) {
+
+      const post = allPosts[i]
+
+      if (post.id === currentPostId) {
+        currentPostIndex = i
+        break
+      }
+    }
+
+    const prevPost = allPosts[currentPostIndex + 1] || null
+    const nextPost = allPosts[currentPostIndex - 1] || null
+
+    return [prevPost, nextPost]
   }
 
 }

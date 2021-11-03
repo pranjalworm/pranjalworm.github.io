@@ -4,6 +4,7 @@
   letter-spacing: -0.05rem;
   margin: 1rem 0;
   font-weight: 800;
+  font-family: 'Patua One';
 }
 
 .headingXl {
@@ -12,23 +13,21 @@
   letter-spacing: -0.05rem;
   margin: 1rem 0;
   font-weight: 400;
+  font-family: 'Patua One';
 }
-
-.headingCenter {
-  text-align: center;
-  color: #666;
-  font-weight: 600;
-} 
 
 .headingLg {
   font-size: 1.5rem;
   line-height: 1.4;
   margin: 1rem 0;
+  color: #222;
+  font-family: 'Patua One';
 }
 
 .headingMd {
   font-size: 1.2rem;
   line-height: 1.5;
+  font-family: 'Patua One';
 }
 
 .borderCircle {
@@ -37,10 +36,6 @@
 
 .colorInherit {
   color: inherit;
-}
-
-.padding1px {
-  padding-top: 1px;
 }
 
 .list {
@@ -69,14 +64,22 @@
 }
 
 .seeAll {
-  margin-bottom: 30px;
+  margin: 1rem 0 4rem 0;
 }
 
-.seeAll > a {
+.seeAllButton {
+  border: 1px solid #f28f38;
+  background:#f28f38;
+  color: #fff;
+  padding: 4px 8px;
+  width: fit-content;
+  border-radius: 4px;
+  transition-duration: 0.2s;
+  font-size: 14px;
+}
+
+.seeAllButton:hover {
+  background: #fff;
   color: #e87d13;
-  text-decoration: none;
-}
-
-.seeAll > a:hover {
-  text-decoration: underline;
+  cursor: pointer;
 }

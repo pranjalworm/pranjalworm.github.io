@@ -2,7 +2,7 @@ import React from 'react'
 import { PostType } from '../../services/posts.service'
 import utilStyles from '../../common/utils.module.css'
 import styles from './section-list.module.css'
-import { Post } from '../../common/interfaces'
+import { PostMeta } from '../../common/interfaces'
 import PostCard from '../post-card/post-card.component'
 
 export default function SectionList(
@@ -13,24 +13,26 @@ export default function SectionList(
   }: {
     sectionHeading: string,
     postType: PostType,
-    postsData: Post[]
+    postsData: PostMeta[]
   }) {
 
   return (
 
-    <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+    <section className={`${utilStyles.headingMd}`}>
 
       <h2 className={utilStyles.headingLg}>{sectionHeading}</h2>
 
-      <ul className={styles.sectionList}>
-        {postsData.map((post: Post) => (
-          <li className={utilStyles.listItem} key={post.id}>
+      <div className={styles.sectionList}>
+
+        {postsData.map((post: PostMeta) => (
+          <div className={utilStyles.listItem} key={post.id}>
 
             <PostCard postType={postType} post={post} />
 
-          </li>
+          </div>
         ))}
-      </ul>
+
+      </div>
     </section>
   )
 }

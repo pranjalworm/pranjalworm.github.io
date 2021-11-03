@@ -6,13 +6,13 @@ import Link from 'next/link'
 import { GetStaticProps } from 'next'
 import React from 'react'
 import SectionList from '../components/section-list/section-list'
-import { Post } from '../common/interfaces'
+import { PostMeta } from '../common/interfaces'
 
 export default function Home({ allPostsData }: {
   allPostsData: {
-    travelPostsData: Post[],
-    blogPostsData: Post[],
-    projectPostsData: Post[]
+    travelPostsData: PostMeta[],
+    blogPostsData: PostMeta[],
+    projectPostsData: PostMeta[]
   }
 }) {
 
@@ -23,12 +23,6 @@ export default function Home({ allPostsData }: {
         <title>{siteTitle}</title>
       </Head>
 
-      <section className={utilStyles.headingMd}>
-        <p className={utilStyles.headingCenter}>
-          Coder. Photographer. Reader. Traveler.
-        </p>
-      </section>
-
       {/* Travel Diaries*/}
       <SectionList
         sectionHeading='Travel Diaries'
@@ -37,7 +31,7 @@ export default function Home({ allPostsData }: {
 
       <div className={utilStyles.seeAll}>
         <Link href={`/travel-diaries/`}>
-          <a>all travel diaries →</a>
+          <div className={utilStyles.seeAllButton}>All Travel Diaries →</div>
         </Link>
       </div>
 
@@ -50,7 +44,7 @@ export default function Home({ allPostsData }: {
 
       <div className={utilStyles.seeAll}>
         <Link href={`/blog-posts/`}>
-          <a>all blog posts →</a>
+          <div className={utilStyles.seeAllButton}>All Blog Posts →</div>
         </Link>
       </div>
 
@@ -63,23 +57,9 @@ export default function Home({ allPostsData }: {
 
       <div className={utilStyles.seeAll}>
         <Link href={`/projects/`}>
-          <a>all projects →</a>
+          <div className={utilStyles.seeAllButton}>All Projects →</div>
         </Link>
       </div>
-
-
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>About</h2>
-
-        <div className={utilStyles.content}>
-          Pranjal Dubey is a programmer and part time photographer.
-          He has kind of an OCD for reading almost anything interesting he can get his hands on.
-          <p>
-            Email: <a href="mailto:hi@pranjaldubey.com">hi@pranjaldubey.com</a><br />
-            Twitter: <a href="https://twitter.com/pranjaldy">@pranjaldy</a>
-          </p>
-        </div>
-      </section>
 
     </Layout>
   )

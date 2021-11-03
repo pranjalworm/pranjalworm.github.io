@@ -1,39 +1,23 @@
 import { PostsService, PostType } from '../../services/posts.service'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import React from 'react'
-import Layout from '../../components/layout/layout'
-import Head from 'next/head'
-import Date from '../../components/date/date'
-import utilStyles from '../../common/utils.module.css'
+import Post from '../../components/post/post.component'
+import { PostContent, PostMeta } from '../../common/interfaces'
 
 const titleSuffix = 'Pranjal Dubey Blog Post'
 
 export default function BlogPosts({
-  postData
+  postContent,
+  suggestedPosts
 }: {
-  postData: {
-    title: string
-    date: string
-    contentHtml: string
-  }
+  postContent: PostContent,
+  suggestedPosts: PostMeta[]
 }) {
 
-  const pageTitle = `${postData.title} - ${titleSuffix}`
+  postContent.titleSuffix = titleSuffix
 
-  return (
-    <Layout>
-      <Head>
-        <title>{pageTitle}</title>
-      </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.note}>
-          <Date dateString={postData.date} />
-        </div>
-        <div className={utilStyles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>
-    </Layout>
-  )
+  return <Post postContent={postContent} suggestedPosts={suggestedPosts}
+    postType={PostType.BlogPost} />
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -45,10 +29,24 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postData = await PostsService.getPostData(params.id as string, PostType.BlogPost)
+
+  const postId = params.id as string
+
+  console.log('blog posts > id > postId', postId)
+  console.log(params)
+
+  const postContent = await PostsService.getPostContent(postId, PostType.BlogPost)
+  // const suggestedPosts = PostsService.getSuggestedPosts(PostType.BlogPost, postId)
+  const suggestedPosts = []
+
+
+  console.log('suggestedPosts')
+  console.log(suggestedPosts)
+
   return {
     props: {
-      postData
+      postContent,
+      suggestedPosts
     }
   }
 }

@@ -3,9 +3,9 @@ import { PostType } from '../../services/posts.service'
 import Date from '../date/date'
 import utilStyles from '../../common/utils.module.css'
 import styles from './post-card.module.css'
-import Link from 'next/link'
 import Image from 'next/image'
-import { Post } from '../../common/interfaces'
+import { PostMeta } from '../../common/interfaces'
+import { useRouter } from 'next/router'
 
 export default function PostCard(
   {
@@ -13,12 +13,21 @@ export default function PostCard(
     post
   }: {
     postType: PostType
-    post: Post
+    post: PostMeta
   }) {
+
+  const router = useRouter()
+
+  const navigateToPost = () => {
+
+    const hrefToPost = `/${postType}/${post.id}`
+
+    router.push(hrefToPost)
+  }
 
   return (
 
-    <div className={styles.card} key={post.id}>
+    <div className={styles.card} key={post.id} onClick={navigateToPost}>
 
       <div className={styles.imageWrapper}>
         <Image
@@ -31,9 +40,7 @@ export default function PostCard(
       <div className={styles.textWrapper}>
 
         <div className={styles.titleWrapper}>
-          <Link href={`/${postType}/${post.id}`}>
-            <a>{post.title}</a>
-          </Link>
+          {post.title}
         </div>
 
         <div className={styles.descriptionWrapper}>
