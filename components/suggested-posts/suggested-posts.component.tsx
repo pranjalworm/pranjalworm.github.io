@@ -1,6 +1,8 @@
 import { PostMeta } from '../../common/interfaces'
 import styles from './suggested-posts.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
+import { iconLoader } from '../../services/loader.service'
 
 const PostLinkText = (previous: boolean, post: PostMeta) => {
 
@@ -10,23 +12,28 @@ const PostLinkText = (previous: boolean, post: PostMeta) => {
   let postHref
 
   if (previous) {
-    arrowPath = '/icons/arrow-back.svg'
+    arrowPath = 'arrow-back.svg'
     altText = 'Arrow Back'
     postLinkClass = styles.postLinkPrevious
     postHref = `/posts/${post.id}`
 
   } else {
-    arrowPath = '/icons/arrow-forward.svg'
+    arrowPath = 'arrow-forward.svg'
     altText = 'Arrow Forward'
     postLinkClass = styles.postLinkNext
     postHref = `/posts/${post.id}`
   }
 
   return (
-    <Link href={postHref} >
+    <Link href={postHref} passHref>
       <div className={postLinkClass}>
         <div className={styles.arrowWrapper}>
-          <img src={arrowPath} alt={altText} />
+          <Image src={arrowPath}
+            alt={altText}
+            layout='fixed'
+            width='24'
+            height='24'
+            loader={iconLoader} />
         </div>
         <div className={styles.postTitle}>
           {post.title}

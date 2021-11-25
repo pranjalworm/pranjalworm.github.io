@@ -31,6 +31,7 @@ export default function PostCard(
           src={`${post.thumbnail}`}
           layout='fill'
           objectFit='cover'
+          alt=''
           loader={imageLoader}
         />
       </div>

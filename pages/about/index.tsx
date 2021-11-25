@@ -25,6 +25,7 @@ const About = () => {
           width='200'
           height='300'
           priority
+          alt='Portrait of Pranjal Dubey'
           loader={imageLoader}
         />
       </div>
@@ -35,7 +36,7 @@ const About = () => {
         </p>
 
         <p>
-          He's also a part time photographer and loves creating silhouettes.
+          He&apos;s also a part time photographer and loves creating silhouettes.
         </p>
 
         <p>

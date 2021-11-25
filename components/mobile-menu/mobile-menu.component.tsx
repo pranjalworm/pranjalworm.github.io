@@ -21,14 +21,14 @@ const MobileMenu = ({ show }: {
   return show ? (
     <nav className={styles.navLinks}>
 
-      <Link href='/'>
+      <Link href='/' passHref>
         <div className={getClass('/')}>
           Blog
         </div>
       </Link>
 
 
-      <Link href='/about'>
+      <Link href='/about' passHref>
         <div className={getClass('/about')}>
           About
         </div>

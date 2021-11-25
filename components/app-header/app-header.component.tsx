@@ -31,7 +31,7 @@ const AppHeader = () => {
 
       <div className={styles.header}>
 
-        <Link href='/'>
+        <Link href='/' passHref>
           <div className={styles.siteHeading}>
             Pranjal Dubey
           </div>

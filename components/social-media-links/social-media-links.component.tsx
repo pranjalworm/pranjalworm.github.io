@@ -1,6 +1,6 @@
 import styles from './social-media-links.module.css'
 import Image from 'next/image'
-import router, { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 import { iconLoader } from '../../services/loader.service'
 
 const twitterLinkId = 'twitter-link'
