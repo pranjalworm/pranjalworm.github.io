@@ -1,0 +1,25 @@
+.signupRoot {
+  margin: 4rem 0;
+}
+
+.signupText {
+  margin: 2rem 0;
+}
+
+.signupForm {
+  width: 100%;
+  display: flex;
+}
+
+.emailField {
+  padding: 10px;
+  border: 1px solid #efefef;
+  width: 70%;
+}
+
+.submitButton {
+  padding: 10px;
+  border: 1px solid #efefef;
+  background: #efefef;
+  width: 30%;
+}

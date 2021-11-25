@@ -5,6 +5,7 @@ import { GetStaticProps } from 'next'
 import React from 'react'
 import { PostMeta } from '../common/interfaces'
 import PostList from '../components/post-list/post-list.component'
+import Signup from '../components/signup/signup.component'
 
 export default function Home({ allPostsData }: {
   allPostsData: PostMeta[]
@@ -18,6 +19,8 @@ export default function Home({ allPostsData }: {
       </Head>
 
       <PostList postsData={allPostsData} />
+
+      <Signup />
 
     </Layout>
   )

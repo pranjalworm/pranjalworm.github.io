@@ -4,7 +4,8 @@ import Date from '../date/date.component'
 import { PostContent, PostMeta } from '../../common/interfaces'
 import styles from './post.module.css'
 import SuggestedPosts from '../suggested-posts/suggested-posts.component'
-import SharePost from '../share-post/share-post.component'
+// import SharePost from '../share-post/share-post.component'
+import Signup from '../signup/signup.component'
 
 
 export default function Post({
@@ -35,6 +36,8 @@ export default function Post({
       {/* <SharePost /> */}
 
       <SuggestedPosts posts={suggestedPosts} />
+
+      <Signup />
 
     </Layout>
   )
