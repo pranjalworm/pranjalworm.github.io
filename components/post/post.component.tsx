@@ -1,20 +1,18 @@
 import Layout from '../../components/layout/layout'
 import Head from 'next/head'
-import Date from '../../components/date/date'
-import utilStyles from '../../common/utils.module.css'
+import Date from '../date/date.component'
 import { PostContent, PostMeta } from '../../common/interfaces'
-// import SuggestedPosts from '../suggested-posts/suggested-posts.component'
-// import { PostType } from '../../services/posts.service'
+import styles from './post.module.css'
+import SuggestedPosts from '../suggested-posts/suggested-posts.component'
+import SharePost from '../share-post/share-post.component'
 
 
 export default function Post({
   postContent,
   suggestedPosts,
-  postType
 }: {
   postContent: PostContent,
-  suggestedPosts: PostMeta[],
-  postType: any
+  suggestedPosts: PostMeta[]
 }) {
 
   const pageTitle = `${postContent.title} - ${postContent.titleSuffix}`
@@ -24,15 +22,19 @@ export default function Post({
       <Head>
         <title>{pageTitle}</title>
       </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postContent.title}</h1>
-        <div className={utilStyles.note}>
+
+      <article className={styles.post}>
+        <h1 className={styles.title}>{postContent.title}</h1>
+        <div className={styles.date}>
           <Date dateString={postContent.date} />
         </div>
-        <div className={utilStyles.content} dangerouslySetInnerHTML={{ __html: postContent.contentHtml }} />
+        <div className={styles.content} dangerouslySetInnerHTML={{ __html: postContent.contentHtml }} />
       </article>
 
-      {/* <SuggestedPosts posts={suggestedPosts} postType={postType} /> */}
+      {/* TODO: setup and enable this */}
+      {/* <SharePost /> */}
+
+      <SuggestedPosts posts={suggestedPosts} />
 
     </Layout>
   )

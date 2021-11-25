@@ -1,0 +1,16 @@
+.aboutImage {
+  position: relative;
+  display: block;
+}
+
+.aboutText {
+  margin-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.aboutText p {
+  margin-bottom: 1rem;
+}

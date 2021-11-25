@@ -1,4 +1,26 @@
 .suggestedPosts {
   display: flex;
   justify-content: space-between;
+  margin-top: 6rem;
+}
+
+.postLinkPrevious, .postLinkNext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.postLinkPrevious div, .postLinkNext div {
+  display: flex;
+  align-items: center;
+}
+
+.postLinkNext {
+  flex-direction: row-reverse;
+}
+
+.postTitle {
+  font-size: 1rem;
+  font-family: futura-pt,sans-serif;
 }

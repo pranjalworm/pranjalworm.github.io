@@ -1,0 +1,9 @@
+.socialMediaIconsWrapper {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+}
+
+.socialMediaIconsWrapper img {
+  width: 24px;
+}

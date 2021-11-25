@@ -1,65 +1,23 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout/layout'
-import utilStyles from '../common/utils.module.css'
-import { DefaultPostCount, PostsService, PostType } from '../services/posts.service'
-import Link from 'next/link'
+import { PostsService } from '../services/posts.service'
 import { GetStaticProps } from 'next'
 import React from 'react'
-import SectionList from '../components/section-list/section-list'
 import { PostMeta } from '../common/interfaces'
+import PostList from '../components/post-list/post-list.component'
 
 export default function Home({ allPostsData }: {
-  allPostsData: {
-    travelPostsData: PostMeta[],
-    blogPostsData: PostMeta[],
-    projectPostsData: PostMeta[]
-  }
+  allPostsData: PostMeta[]
 }) {
 
   return (
-    <Layout home>
+    <Layout>
 
       <Head>
         <title>{siteTitle}</title>
       </Head>
 
-      {/* Travel Diaries*/}
-      <SectionList
-        sectionHeading='Travel Diaries'
-        postType={'travel-diaries' as PostType}
-        postsData={allPostsData.travelPostsData} />
-
-      <div className={utilStyles.seeAll}>
-        <Link href={`/travel-diaries/`}>
-          <div className={utilStyles.seeAllButton}>All Travel Diaries →</div>
-        </Link>
-      </div>
-
-
-      {/* Blog Posts */}
-      <SectionList
-        sectionHeading='Blog Posts'
-        postType={'blog-posts' as PostType}
-        postsData={allPostsData.blogPostsData} />
-
-      <div className={utilStyles.seeAll}>
-        <Link href={`/blog-posts/`}>
-          <div className={utilStyles.seeAllButton}>All Blog Posts →</div>
-        </Link>
-      </div>
-
-
-      {/* Project Posts */}
-      <SectionList
-        sectionHeading='Projects'
-        postType={'projects' as PostType}
-        postsData={allPostsData.projectPostsData} />
-
-      <div className={utilStyles.seeAll}>
-        <Link href={`/projects/`}>
-          <div className={utilStyles.seeAllButton}>All Projects →</div>
-        </Link>
-      </div>
+      <PostList postsData={allPostsData} />
 
     </Layout>
   )
@@ -67,17 +25,11 @@ export default function Home({ allPostsData }: {
 
 export const getStaticProps: GetStaticProps = async () => {
 
-  const travelPostsData = PostsService.getSortedPostsData(PostType.TravelDiaries, DefaultPostCount)
-  const blogPostsData = PostsService.getSortedPostsData(PostType.BlogPost, DefaultPostCount)
-  const projectPostsData = PostsService.getSortedPostsData(PostType.Project, DefaultPostCount)
+  const allPostsData = PostsService.getSortedPostsData()
 
   return {
     props: {
-      allPostsData: {
-        travelPostsData,
-        blogPostsData,
-        projectPostsData
-      }
+      allPostsData
     }
   }
 }

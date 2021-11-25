@@ -1,0 +1,50 @@
+.header {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 500;
+}
+
+.siteHeading {
+  font-family: futura-pt,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+  z-index: 1000;
+}
+
+/**************************** Menu Button Styling *****************************/
+
+#mobileMenuButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 50px;
+}
+
+.menuLine {
+  border-top: 1px solid #222;
+  width: 100%;
+  transition-duration: 0.1s;
+}
+
+#menuLine1 {
+  margin-bottom: 8px;
+}
+
+.menuOpen #menuLine1 {
+  z-index: 501;
+  transform-origin: center;
+  width: 80%;
+  transform: rotate(45deg) translate(2px, 5px);
+}
+
+.menuOpen #menuLine2 {
+  z-index: 502;
+  transform-origin: center;
+  width: 80%;
+  transform: rotate(-45deg) translate(0px, -5px);
+}

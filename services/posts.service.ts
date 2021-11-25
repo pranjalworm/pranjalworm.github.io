@@ -6,37 +6,16 @@ import html from 'remark-html'
 import { isProduction } from '../utils'
 import { PostMeta } from '../common/interfaces'
 
-export const DefaultPostCount = 3
-
-export enum PostType {
-  BlogPost = 'blog-posts',
-  Project = 'projects',
-  TravelDiaries = 'travel-diaries'
-}
-
 export namespace PostsService {
-
-  const getPostTypeDirectoryPath = (postType: PostType) => {
-
-    return path.join(process.cwd(), 'content', postType)
-  }
-
-
-  const postTypeDirectory = {
-    [PostType.BlogPost]: getPostTypeDirectoryPath(PostType.BlogPost),
-    [PostType.Project]: getPostTypeDirectoryPath(PostType.Project),
-    [PostType.TravelDiaries]: getPostTypeDirectoryPath(PostType.TravelDiaries),
-  }
-
-
-  const getPostTypeDirectory = (postType: PostType) => {
-
-    return postTypeDirectory[postType]
-  }
 
   const isInDraftPhase = (matterResult: any) => {
 
     return matterResult.data.draft
+  }
+
+  const getContentDirectoryPath = () => {
+
+    return path.join(process.cwd(), 'content')
   }
 
 
@@ -47,14 +26,14 @@ export namespace PostsService {
 
     return {
       id,
-      ...(matterResult.data as { date: string; title: string, draft: boolean, thumbnail: string })
+      ...(matterResult.data as { date: string; title: string, draft: boolean, thumbnail: string, description: string })
     }
   }
 
 
-  export function getSortedPostsData(postType: PostType, count?: number) {
+  export function getSortedPostsData(count?: number) {
 
-    const pathname = getPostTypeDirectory(postType)
+    const pathname = getContentDirectoryPath()
     const fileNames = fs.readdirSync(pathname)
 
     const filesCount = fileNames.length
@@ -100,9 +79,9 @@ export namespace PostsService {
   }
 
 
-  export function getAllPostIds(postType: PostType) {
+  export function getAllPostIds() {
 
-    const pathname = getPostTypeDirectory(postType);
+    const pathname = getContentDirectoryPath()
 
     const fileNames = fs.readdirSync(pathname)
     return fileNames.map(fileName => {
@@ -115,9 +94,9 @@ export namespace PostsService {
   }
 
 
-  export async function getPostContent(id: string, postType: PostType) {
+  export async function getPostContent(id: string) {
 
-    const pathname = getPostTypeDirectory(postType);
+    const pathname = getContentDirectoryPath()
 
     const fullPath = path.join(pathname, `${id}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
@@ -141,11 +120,11 @@ export namespace PostsService {
   }
 
 
-  export const getSuggestedPosts = (postType: PostType, currentPostId: string): PostMeta[] => {
+  export const getSuggestedPosts = (currentPostId: string): PostMeta[] => {
 
-    const allPosts = getSortedPostsData(postType)
+    const allPosts = getSortedPostsData()
 
-    let currentPostIndex: number
+    let currentPostIndex = 1
 
     for (let i = 0; i < allPosts.length; i++) {
 

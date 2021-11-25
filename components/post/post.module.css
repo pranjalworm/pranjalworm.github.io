@@ -1,0 +1,21 @@
+.content {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.post p {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: futura-pt,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.date {
+  margin: 1rem 0;
+}

@@ -1,0 +1,76 @@
+.navLinks {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  z-index: 500;
+  justify-content: center;
+  animation: fadeIn ease-in 0.2s;
+}
+
+.menuItem {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  animation: moveUp ease-out 0.4s;
+}
+
+.linkDisabled {
+  color: #999;
+}
+
+/****************************** menu opening animation ************************/
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/****************************** menu closing animation ************************/
+.menuClose {
+  animation: fadeOut ease-in 2s;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

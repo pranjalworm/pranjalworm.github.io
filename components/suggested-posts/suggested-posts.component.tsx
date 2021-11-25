@@ -1,42 +1,60 @@
 import { PostMeta } from '../../common/interfaces'
-import { PostType } from '../../services/posts.service'
-import PostCard from '../post-card/post-card.component'
 import styles from './suggested-posts.module.css'
+import Link from 'next/link'
+
+const PostLinkText = (previous: boolean, post: PostMeta) => {
+
+  let altText: string
+  let arrowPath: string
+  let postLinkClass: string
+  let postHref
+
+  if (previous) {
+    arrowPath = '/icons/arrow-back.svg'
+    altText = 'Arrow Back'
+    postLinkClass = styles.postLinkPrevious
+    postHref = `/posts/${post.id}`
+
+  } else {
+    arrowPath = '/icons/arrow-forward.svg'
+    altText = 'Arrow Forward'
+    postLinkClass = styles.postLinkNext
+    postHref = `/posts/${post.id}`
+  }
+
+  return (
+    <Link href={postHref} >
+      <div className={postLinkClass}>
+        <div className={styles.arrowWrapper}>
+          <img src={arrowPath} alt={altText} />
+        </div>
+        <div className={styles.postTitle}>
+          {post.title}
+        </div>
+      </div>
+    </Link>
+
+  )
+}
+
 
 const SuggestedPosts = ({
-  posts,
-  postType
+  posts
 }: {
-  posts: PostMeta[],
-  postType: PostType
+  posts: PostMeta[]
 }) => {
 
-  const [post1, post2] = posts
+  const [previousPost, nextPost] = posts
 
   return (
     <div className={styles.suggestedPosts}>
       {
-        post1 ?
-          <div>
-            <div>
-              Previous Post
-            </div>
-            <PostCard postType={postType} post={post1} />
-          </div>
-          :
-          null
+        previousPost ? PostLinkText(true, previousPost) : <div></div>
       }
 
       {
-        post2 ?
-          <div>
-            Next Post
-            <PostCard postType={postType} post={post2} />
-          </div>
-          :
-          null
+        nextPost ? PostLinkText(false, nextPost) : <div></div>
       }
-
     </div>
   )
 
