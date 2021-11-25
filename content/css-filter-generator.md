@@ -3,8 +3,13 @@ date: "2021-03-19"
 description: "A tool to create css image filters. Useful for changing colors of SVG icons."
 title: "CSS Filter Generator"
 draft: false
-thumbnail: 'three-girlfriends.webp'
+thumbnail: 'css-filter-generator-screenshot.webp'
 ---
+
+
+<div class="post-image-wrapper post-top-image-wrapper">
+  <img src="/images/css-filter-generator-screenshot.webp" class="post-image" alt="Screenshot of CSS Filter Generator" />
+</div>
 
 Project website: [CSS Filter Generator](https://pranjaldubey.com/css-filter-generator/ "CSS Filter Generator")
 

@@ -1,10 +1,15 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import remark from 'remark'
-import html from 'remark-html'
+import { unified } from 'unified'
+import remarkRehype from 'remark-rehype'
+import rehypeRaw from 'rehype-raw'
+import remarkParse from 'remark-parse'
+import rehypeFormat from 'rehype-format'
+import rehypeStringify from 'rehype-stringify'
 import { isProduction } from '../utils'
 import { PostMeta } from '../common/interfaces'
+
 
 export namespace PostsService {
 
@@ -104,10 +109,16 @@ export namespace PostsService {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents)
 
-    // Use remark to convert markdown into HTML string
-    const processedContent = await remark()
-      .use(html)
+    const processedContent = await unified()
+      .use(remarkParse)
+      .use(remarkRehype, { allowDangerousHtml: true })
+      .use(rehypeRaw)
+      .use(rehypeFormat)
+      .use(rehypeStringify)
       .process(matterResult.content)
+      .catch((error) => {
+        throw error
+      })
 
     const contentHtml = processedContent.toString()
 

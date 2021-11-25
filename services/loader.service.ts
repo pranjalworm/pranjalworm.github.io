@@ -1,20 +1,23 @@
-// File to define image and icon loaders
+import { isProduction } from "../utils"
 
 
 export const imageLoader = ({ src, width, quality }:
   { src: string, width: number, quality?: number }) => {
 
-  const baseUrl = `${process.env.BASE_URL}/images`
-
-  return `${baseUrl}/${src}`
+  return `${getBaseUrl()}/images/${src}`
 
 }
+
 
 export const iconLoader = ({ src, width, quality }:
   { src: string, width: number, quality?: number }) => {
 
-  const baseUrl = `${process.env.BASE_URL}/icons`
+  return `${getBaseUrl()}/icons/${src}`
 
-  return `${baseUrl}/${src}`
+}
 
+
+const getBaseUrl = () => {
+
+  return isProduction() ? `${process.env.BASE_URL}/` : 'http://localhost:3000'
 }
