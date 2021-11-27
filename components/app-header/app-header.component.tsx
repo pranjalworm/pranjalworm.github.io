@@ -19,8 +19,10 @@ const AppHeader = () => {
 
     if (disable) {
       document.body.classList.add('disableScroll')
+      document.body.style.position = 'fixed'
     } else {
       document.body.classList.remove('disableScroll')
+      document.body.style.position = 'static'
     }
   }
 
