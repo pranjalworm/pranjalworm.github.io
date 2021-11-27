@@ -8,6 +8,23 @@ const AppHeader = () => {
   const [menuOpened, setMenuOpened] = useState(false)
   const mobileMenuButtonRef = useRef(null)
 
+
+  const mobileMenuButtonClicked = () => {
+
+    menuOpened ? setMenuOpened(false) : setMenuOpened(true)
+  }
+
+
+  const disableScroll = (disable: boolean) => {
+
+    if (disable) {
+      document.body.classList.add('disableScroll')
+    } else {
+      document.body.classList.remove('disableScroll')
+    }
+  }
+
+
   // for animating mobile menu button
   useEffect(() => {
 
@@ -15,16 +32,14 @@ const AppHeader = () => {
 
     if (menuOpened) {
       (buttonRef as any).classList.add(styles.menuOpen)
+      disableScroll(true)
     } else {
       (buttonRef as any).classList.remove(styles.menuOpen)
+      disableScroll(false)
     }
 
   }, [menuOpened])
 
-  const mobileMenuButtonClicked = () => {
-
-    menuOpened ? setMenuOpened(false) : setMenuOpened(true)
-  }
 
   return (
     <header className={styles.headerWrapper}>
