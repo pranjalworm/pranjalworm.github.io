@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { iconLoader } from '../../services/loader.service'
 
-const PostLinkText = (previous: boolean, post: PostMeta) => {
+const PostLink = (previous: boolean, post: PostMeta) => {
 
   let altText: string
   let arrowPath: string
@@ -56,11 +56,11 @@ const SuggestedPosts = ({
   return (
     <div className={styles.suggestedPosts}>
       {
-        previousPost ? PostLinkText(true, previousPost) : <div></div>
+        previousPost ? PostLink(true, previousPost) : <div></div>
       }
 
       {
-        nextPost ? PostLinkText(false, nextPost) : <div></div>
+        nextPost ? PostLink(false, nextPost) : <div></div>
       }
     </div>
   )

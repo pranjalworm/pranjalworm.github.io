@@ -6,7 +6,7 @@ draft: false
 thumbnail: 'pranjal-dubey-photography-thumb.webp'
 ---
 
-<div class="post-image-wrapper post-top-image-wrapper">
+<div class="post-image-wrapper">
   <img src="/images/pranjal-dubey-photography-thumb.webp" class="post-image" alt="Silhouette of a fisherman casting his net" />
 </div>
 

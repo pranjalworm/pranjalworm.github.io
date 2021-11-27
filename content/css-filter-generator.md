@@ -7,7 +7,7 @@ thumbnail: 'css-filter-generator-screenshot.webp'
 ---
 
 
-<div class="post-image-wrapper post-top-image-wrapper">
+<div class="post-image-wrapper">
   <img src="/images/css-filter-generator-screenshot.webp" class="post-image" alt="Screenshot of CSS Filter Generator" />
 </div>
 

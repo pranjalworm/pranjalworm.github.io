@@ -1,14 +1,19 @@
-.aboutImage {
+.aboutImageWrapper {
   position: relative;
   display: block;
+  margin: 0% auto;
 }
+
+/* desktop */
+@media all and (min-width: 768px) {
+  .aboutImageWrapper {
+    width: 50%;
+  }
+}
+
 
 .aboutText {
   margin-top: 2rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 2rem;
 }
 
 .aboutText p {

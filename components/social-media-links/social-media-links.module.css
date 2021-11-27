@@ -1,9 +1,14 @@
 .socialMediaIconsWrapper {
   display: flex;
+  margin: 0% auto;
   margin-top: 2rem;
   justify-content: space-evenly;
+  max-width: 720px;
 }
 
 .socialMediaIconsWrapper img {
   width: 24px;
+}
+.socialMediaIconsWrapper img:hover {
+  cursor: pointer;
 }

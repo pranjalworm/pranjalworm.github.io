@@ -20,8 +20,6 @@ export default function Home({ allPostsData }: {
 
       <PostList postsData={allPostsData} />
 
-      <Signup />
-
     </Layout>
   )
 }

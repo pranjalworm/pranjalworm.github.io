@@ -8,7 +8,7 @@ thumbnail: 'pranjal-dubey.webp'
 
 "Hello World!"
 
-<div class="post-image-wrapper post-top-image-wrapper">
+<div class="post-image-wrapper">
   <img src="/images/pranjal-dubey.webp" class="post-image" alt="Pranjal Dubey's photograph" />
   <div class="post-image-caption">
     That's me.
@@ -47,4 +47,4 @@ I irregularly post on my [Instagram account](https://www.instagram.com/pranjalwo
 
 Once again I felt the need to create something which I could call my own. About a year back, I started working on my [photography website](https://pranjaldubey.photography), but I can only put up my photography related stuff there and also it's meant to be primarily seen by my potential photoshoot clients. So it's built from the ground up to emphasize the "professional" photographer aspect of me.
 
-So I've started working on this website also on which you are (hopefully) reading this blog post. This website is supposed to more funky. I can post anything and everything here and I don't have to care about clients and my perceived "image" here. I am keeping it simple this time and using NextJS' blog template to build it as I want to focus solely on the blogging part for now. I have big plans for this website too. Let's see how it goes.
+So I've started working on this website also on which you are (hopefully) reading this blog post. This website is supposed to more funky. I can post anything and everything here and I don't have to care about clients and my perceived "image" here. I am keeping it simple this time as I want to focus solely on the blogging part for now. I have big plans for this website too. Let's see how it goes.

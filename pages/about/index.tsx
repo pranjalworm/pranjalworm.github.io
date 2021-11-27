@@ -17,8 +17,7 @@ const About = () => {
         <title>{siteTitle}</title>
       </Head>
 
-
-      <div className={styles.aboutImage}>
+      <div className={styles.aboutImageWrapper}>
         <Image
           src={aboutImage}
           layout='responsive'
@@ -30,7 +29,7 @@ const About = () => {
         />
       </div>
 
-      <div className={styles.aboutText}>
+      <div className={`${styles.aboutText} textContent`}>
         <p>
           Pranjal Dubey is a Bangalore based programmer currently working in Freshworks.
         </p>
@@ -40,7 +39,7 @@ const About = () => {
         </p>
 
         <p>
-          He has an OCD for reading almost anything interesting he can get his hands on or at least adding that thing to an ever growing to-read list.
+          He has an OCD for reading almost anything interesting he can get his hands on or at least adding them to an ever growing to-read list.
         </p>
         <p>
           Pizza and Pau Bhaji are life for him.

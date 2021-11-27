@@ -11,6 +11,10 @@
   gap: 0.5rem;
 }
 
+.postLinkPrevious:hover, .postLinkNext:hover {
+  cursor: pointer;
+}
+
 .postLinkPrevious div, .postLinkNext div {
   display: flex;
   align-items: center;

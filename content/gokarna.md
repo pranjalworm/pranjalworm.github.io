@@ -6,7 +6,7 @@ description: 'The quick brown fox jumps right over the lazy dog'
 thumbnail: 'solo-traveler.webp'
 ---
 
-<div class="post-image-wrapper post-top-image-wrapper">
+<div class="post-image-wrapper">
   <img src="/images/three-friends.webp" class="post-image" alt="Three friends on the beach" />
   <div class="post-image-caption">
     Let me paint some reflections.

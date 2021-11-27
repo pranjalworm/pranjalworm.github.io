@@ -1,7 +1,15 @@
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
+  justify-content: space-between;
+}
+
+/* mobile */
+@media all and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
 }
 
 .card:hover {
@@ -10,7 +18,22 @@
 
 .imageWrapper {
   height: 250px;
+  max-width: 768px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* desktop */
+@media all and (min-width: 768px) {
+  .imageWrapper {
+    min-width: 50%;
+  }
+
+  .textWrapper {
+    margin-left: 4rem;
+  }
 }
 
 .description {

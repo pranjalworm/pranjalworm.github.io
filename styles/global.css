@@ -1,7 +1,10 @@
+/******************************** BASIC RESETS ********************************/
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  animation-duration: 0.2s;
 }
 
 html,
@@ -24,19 +27,13 @@ a:hover {
 
 .post-image-wrapper {
   margin: 4rem auto;
+  text-align: center;
 }
 
 .post-image {
   margin: 0% auto;
-  width: 100%;
-}
-
-/* for desktops */
-@media (min-width: 760px) {
-
-  .post-image {
-    max-height: 75vh;
-  }
+  max-height: 80vh;
+  max-width: 100%;
 }
 
 .post-image-caption {
@@ -44,4 +41,15 @@ a:hover {
   font-size: 0.8rem;
   font-weight: 500;
   margin-top: 1rem;
+  font-style: italic;
+}
+
+
+/*************************** STYLING FOR POSTS' TEXT **************************/
+
+.textContent {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2rem;
 }

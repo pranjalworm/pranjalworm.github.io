@@ -11,12 +11,12 @@ const AppHeader = () => {
   // for animating mobile menu button
   useEffect(() => {
 
-    const elementRef = mobileMenuButtonRef?.current
+    const buttonRef = mobileMenuButtonRef?.current
 
     if (menuOpened) {
-      (elementRef as any).classList.add(styles.menuOpen)
+      (buttonRef as any).classList.add(styles.menuOpen)
     } else {
-      (elementRef as any).classList.remove(styles.menuOpen)
+      (buttonRef as any).classList.remove(styles.menuOpen)
     }
 
   }, [menuOpened])

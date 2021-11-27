@@ -18,10 +18,16 @@
   font-size: 1.5rem;
   margin-bottom: 2rem;
   animation: moveUp ease-out 0.4s;
+  user-select: none;
+}
+
+.menuItem:hover {
+  cursor: pointer;
 }
 
 .linkDisabled {
   color: #999;
+  cursor: auto !important;
 }
 
 /****************************** menu opening animation ************************/
