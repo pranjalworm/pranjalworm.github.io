@@ -2,7 +2,7 @@
 date: "2021-03-18"
 draft: false
 title: "Mandatory Hello World Post"
-description: "Well it would be almost rude from the perspective of a programmer not to begin with a Hello World post."
+description: "Well it would be borderline criminal for a programmer not to begin with a \"Hello World\" post."
 thumbnail: 'pranjal-dubey.webp'
 ---
 

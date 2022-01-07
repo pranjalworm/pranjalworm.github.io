@@ -46,7 +46,7 @@ export default function PostCard(
           {post.title}
         </div>
 
-        <div className={styles.description}>
+        <div className='textContent'>
           {post.description}
         </div>
 
