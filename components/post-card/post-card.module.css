@@ -12,6 +12,10 @@
   }
 }
 
+.textWrapper {
+  flex-grow: 2;
+}
+
 .card:hover {
   cursor: pointer;
 }
