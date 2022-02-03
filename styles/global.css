@@ -1,3 +1,9 @@
+/******************************* TAILWIND IMPORTS *****************************/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /******************************** BASIC RESETS ********************************/
 
 * {
