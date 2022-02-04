@@ -4,7 +4,6 @@ import Date from '../date/date.component'
 import { PostContent, PostMeta } from '../../common/interfaces'
 import styles from './post.module.css'
 import SuggestedPosts from '../suggested-posts/suggested-posts.component'
-// import SharePost from '../share-post/share-post.component'
 
 
 export default function Post({
@@ -24,11 +23,11 @@ export default function Post({
       </Head>
 
       <article className={`${styles.post} textContent`}>
-        <h1 className={styles.title}>{postContent.title}</h1>
-        <div className={styles.date}>
+        <h1 className='font-title text-3xl'>{postContent.title}</h1>
+        <div className='my-4'>
           <Date dateString={postContent.date} />
         </div>
-        <div className={styles.content} dangerouslySetInnerHTML={{ __html: postContent.contentHtml }} />
+        <div dangerouslySetInnerHTML={{ __html: postContent.contentHtml }} />
       </article>
 
       {/* TODO: setup and enable this */}

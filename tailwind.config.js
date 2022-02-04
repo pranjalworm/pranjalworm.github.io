@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      title: ["futura-pt, sans-serif"],
+      body: ["Helvetica, sans-serif"]
+    }
   },
   plugins: [],
 }

@@ -1,59 +1,6 @@
-.card {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-}
-
 /* mobile */
 @media all and (max-width: 768px) {
   .card {
     flex-direction: column;
   }
-}
-
-.textWrapper {
-  flex-grow: 2;
-}
-
-.card:hover {
-  cursor: pointer;
-}
-
-.imageWrapper {
-  height: 250px;
-  max-width: 768px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* desktop */
-@media all and (min-width: 768px) {
-  .imageWrapper {
-    min-width: 50%;
-  }
-
-  .textWrapper {
-    margin-left: 4rem;
-  }
-}
-
-.title {
-  font-size: 2rem;
-  font-family: futura-pt,sans-serif;
-}
-
-.readMore {
-  margin-top: 1rem;
-  font-size: 0.8rem;
-  color: #999;
-  font-weight: 300;
-  border-bottom: 1px solid #ddd;
-  width: fit-content;
-}
-
-.imageWrapper, .dateWrapper, .title, .readMore {
-  margin-bottom: 1rem;
 }

@@ -4,6 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/******************************* TAILWIND CUSTOM ******************************/
+
+.h-250px {
+  height: 250px;
+}
+
+
+/* desktop */
+@media all and (min-width: 768px) {
+  .c-md-min-w-half {
+    min-width: 50%;
+  }
+
+  .c-md-ml-16 {
+    margin-left: 4rem;
+  }
+}
+
+
 /******************************** BASIC RESETS ********************************/
 
 * {
