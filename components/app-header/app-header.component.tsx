@@ -1,13 +1,14 @@
 import styles from './app-header.module.css'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
-import MobileMenu from '../mobile-menu/mobile-menu.component'
+import Menu from '../mobile-menu/mobile-menu.component'
+import Image from 'next/image'
+import { imageLoader } from '../../services/loader.service'
 
 const AppHeader = () => {
 
   const [menuOpened, setMenuOpened] = useState(false)
   const mobileMenuButtonRef = useRef(null)
-
 
   const mobileMenuButtonClicked = () => {
 
@@ -44,29 +45,43 @@ const AppHeader = () => {
 
 
   return (
-    <header className={styles.headerWrapper}>
+    <div className='relative mb-28'>
+      <div className='fixed top-0 left-0 right-0 h-28 flex px-4 m-auto bg-white/80 backdrop-blur z-50 max-w-screen-md'>
 
-      <div className={styles.header}>
+        <div className='flex items-center justify-between w-full z-10 '>
 
-        <Link href='/' passHref>
-          <div className={styles.siteHeading}>
-            Pranjal Dubey
+          <Link href='/' passHref>
+            <div className='flex items-center hover:cursor-pointer z-50'>
+              <div className='mr-4'>
+                <Image src='pranjal-profile-pic.webp'
+                  className='rounded-full'
+                  alt='Pranjal Dubey Photograph'
+                  layout='fixed'
+                  width='50'
+                  height='50'
+                  loader={imageLoader} />
+              </div>
+
+              <div className='font-title text-4xl'>
+                Pranjal Dubey
+              </div>
+            </div>
+          </Link>
+
+          <div className='flex flex-col align-center justify-center w-9 h-12 z-20 hover:cursor-pointer'
+            onClick={mobileMenuButtonClicked}
+            ref={mobileMenuButtonRef}>
+
+            <div id={styles.menuLine1} className='border-t border-black w-full duration-100 mb-2' />
+            <div id={styles.menuLine2} className='border-t border-black w-full duration-100' />
           </div>
-        </Link>
 
-        <div id={styles.mobileMenuButton}
-          onClick={mobileMenuButtonClicked}
-          ref={mobileMenuButtonRef}>
-
-          <div id={styles.menuLine1} className={styles.menuLine} />
-          <div id={styles.menuLine2} className={styles.menuLine} />
         </div>
 
       </div>
 
-      <MobileMenu show={menuOpened} />
-
-    </header>
+      <Menu show={menuOpened} />
+    </div>
   )
 }
 

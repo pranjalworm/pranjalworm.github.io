@@ -1,4 +1,3 @@
-import styles from './social-media-links.module.css'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { iconLoader } from '../../services/loader.service'
@@ -76,11 +75,12 @@ const SocialMediaLinks = () => {
   }
 
   return (
-    <div className={styles.socialMediaIconsWrapper} onClick={openLink}>
-
+    <div onClick={openLink}
+      className='flex justify-between items-center m-auto h-16 max-w-screen-md'>
       {
         WebLinks.map((linkItem) => (
           <Image src={linkItem.src}
+            className='hover:cursor-pointer'
             key={linkItem.id}
             id={linkItem.id}
             alt={linkItem.alt}

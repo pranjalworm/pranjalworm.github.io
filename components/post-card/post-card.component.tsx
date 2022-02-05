@@ -1,6 +1,5 @@
 import React from 'react'
 import Date from '../date/date.component'
-import styles from './post-card.module.css'
 import Image from 'next/image'
 import { PostMeta } from '../../common/interfaces'
 import { useRouter } from 'next/router'
@@ -24,9 +23,10 @@ export default function PostCard(
 
   return (
 
-    <div className={styles.card} key={post.id} onClick={navigateToPost}>
+    <div key={post.id} onClick={navigateToPost}
+      className='flex flex-col md:flex-row justify-between w-full hover:cursor-pointer'>
 
-      <div className={styles.imageWrapper}>
+      <div className='relative flex justify-center items-center h-[250px] mb-4 max-w-screen-md c-md-min-w-half'>
         <Image
           src={`${post.thumbnail}`}
           layout='fill'
@@ -36,13 +36,13 @@ export default function PostCard(
         />
       </div>
 
-      <div className={styles.textWrapper}>
+      <div className='c-md-ml-16 grow'>
 
-        <div className={styles.dateWrapper}>
+        <div className='mb-4'>
           <Date dateString={post.date} />
         </div>
 
-        <div className={styles.title}>
+        <div className='text-3xl font-title mb-4'>
           {post.title}
         </div>
 
@@ -50,7 +50,7 @@ export default function PostCard(
           {post.description}
         </div>
 
-        <div className={styles.readMore}>
+        <div className='text-sm text-gray-400 font-light my-4 border-b w-fit'>
           Read more
         </div>
 

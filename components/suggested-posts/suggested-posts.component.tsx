@@ -8,26 +8,25 @@ const PostLink = (previous: boolean, post: PostMeta) => {
 
   let altText: string
   let arrowPath: string
-  let postLinkClass: string
-  let postHref
+  let postHref: string
+  let flexDirection = ''
 
   if (previous) {
     arrowPath = 'arrow-back.svg'
     altText = 'Arrow Back'
-    postLinkClass = styles.postLinkPrevious
-    postHref = `/posts/${post.id}`
 
   } else {
     arrowPath = 'arrow-forward.svg'
     altText = 'Arrow Forward'
-    postLinkClass = styles.postLinkNext
-    postHref = `/posts/${post.id}`
+    flexDirection = 'flex-row-reverse'
   }
+
+  postHref = `/posts/${post.id}`
 
   return (
     <Link href={postHref} passHref>
-      <div className={postLinkClass}>
-        <div className={styles.arrowWrapper}>
+      <div className={`flex gap-2 items-center hover:cursor-pointer ${flexDirection}`}>
+        <div className='flex items-center'>
           <Image src={arrowPath}
             alt={altText}
             layout='fixed'
@@ -35,7 +34,7 @@ const PostLink = (previous: boolean, post: PostMeta) => {
             height='24'
             loader={iconLoader} />
         </div>
-        <div className={styles.postTitle}>
+        <div className='font-title'>
           {post.title}
         </div>
       </div>
@@ -54,7 +53,7 @@ const SuggestedPosts = ({
   const [previousPost, nextPost] = posts
 
   return (
-    <div className={styles.suggestedPosts}>
+    <div className='flex justify-between mt-16'>
       {
         previousPost ? PostLink(true, previousPost) : <div></div>
       }
