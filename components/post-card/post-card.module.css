@@ -1,6 +1,0 @@
-/* mobile */
-@media all and (max-width: 768px) {
-  .card {
-    flex-direction: column;
-  }
-}

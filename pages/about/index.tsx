@@ -17,7 +17,7 @@ const About = () => {
         <title>{siteTitle}</title>
       </Head>
 
-      <div className={styles.aboutImageWrapper}>
+      <div className='relative block my-0 mx-auto md:w-1/2'>
         <Image
           src={aboutImage}
           layout='responsive'
@@ -29,20 +29,20 @@ const About = () => {
         />
       </div>
 
-      <div className={`${styles.aboutText} textContent`}>
-        <p>
+      <div className={`mt-8 textContent`}>
+        <p className='mb-4'>
           Pranjal Dubey is a Bangalore based programmer currently working in Freshworks.
         </p>
 
-        <p>
+        <p className='mb-4'>
           He&apos;s also a part time photographer and loves creating silhouettes.
         </p>
 
-        <p>
+        <p className='mb-4'>
           He has an OCD for reading almost anything interesting he can get his hands on or at least adding them to an ever growing to-read list.
         </p>
-        <p>
-          Pizza and Pau Bhaji are life for him.
+        <p className='mb-4'>
+          Pau Bhaji is life for him.
         </p>
       </div>
 

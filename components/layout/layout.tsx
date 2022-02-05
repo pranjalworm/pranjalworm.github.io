@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
 import AppHeader from '../app-header/app-header.component'
 import AppFooter from '../app-footer/app-footer.component'
 
@@ -12,7 +11,7 @@ export default function Layout({ children }: {
   return (
     <>
 
-      <div className={styles.container}>
+      <div className='max-w-screen-md px-4 mt-8 mx-auto'>
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta

@@ -24,9 +24,9 @@ export default function PostCard(
   return (
 
     <div key={post.id} onClick={navigateToPost}
-      className='flex flex-row justify-between w-full hover:cursor-pointer'>
+      className='flex flex-col md:flex-row justify-between w-full hover:cursor-pointer'>
 
-      <div className='relative flex justify-center items-center h-250px mb-4 max-w-screen-md c-md-min-w-half'>
+      <div className='relative flex justify-center items-center h-[250px] mb-4 max-w-screen-md c-md-min-w-half'>
         <Image
           src={`${post.thumbnail}`}
           layout='fill'
