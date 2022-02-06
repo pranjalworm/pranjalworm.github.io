@@ -3,7 +3,6 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import React from 'react'
 import Post from '../../components/post/post.component'
 import { PostContent, PostMeta } from '../../common/interfaces'
-import Layout from '../../components/layout/layout'
 
 const titleSuffix = 'Pranjal Dubey'
 

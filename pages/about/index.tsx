@@ -1,7 +1,6 @@
 import Layout from '../../components/layout/layout'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './about.module.css'
 import { imageLoader } from '../../services/loader.service'
 
 

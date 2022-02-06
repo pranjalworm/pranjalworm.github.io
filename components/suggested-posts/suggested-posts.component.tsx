@@ -1,5 +1,4 @@
 import { PostMeta } from '../../common/interfaces'
-import styles from './suggested-posts.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import { iconLoader } from '../../services/loader.service'
