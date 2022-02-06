@@ -8,7 +8,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="stylesheet" href="https://use.typekit.net/pcx0jew.css" />
         </Head>
-        <body className='dark:bg-slate-800'>
+        <body className='dark:bg-gray-800'>
           <Main />
           <NextScript />
         </body>

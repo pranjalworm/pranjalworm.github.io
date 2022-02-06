@@ -47,7 +47,7 @@ const AppHeader = () => {
 
   return (
     <div className='relative mb-28'>
-      <div className='fixed top-0 left-0 right-0 h-28 flex px-4 m-auto bg-white/80 dark:bg-slate-800/80 backdrop-blur z-50 max-w-screen-md'>
+      <div className='fixed top-0 left-0 right-0 h-28 flex px-4 m-auto bg-white/80 dark:bg-gray-800/80 backdrop-blur z-50 max-w-screen-md'>
 
         <div className='flex items-center justify-between w-full z-10'>
 

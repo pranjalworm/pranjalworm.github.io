@@ -24,7 +24,7 @@ const Menu = ({ show }: {
 
   return show ? (
 
-    <nav className='fixed top-28 bottom-0 left-0 right-0 flex flex-col items-center bg-white/80 dark:bg-slate-800/80 backdrop-blur z-10 justify-center animate-[fadeIn_0.2s_ease-in]'>
+    <nav className='fixed top-28 bottom-0 left-0 right-0 flex flex-col items-center bg-white/80 dark:bg-gray-800/80 backdrop-blur z-10 justify-center animate-[fadeIn_0.2s_ease-in]'>
 
       <Link href='/' passHref>
         <div className={getClass('/')}>
