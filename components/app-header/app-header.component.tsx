@@ -1,7 +1,7 @@
 import styles from './app-header.module.css'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
-import Menu from '../mobile-menu/mobile-menu.component'
+import Menu from '../mobile-menu/menu.component'
 import Image from 'next/image'
 import { imageLoader } from '../../services/loader.service'
 
@@ -10,11 +10,12 @@ const AppHeader = () => {
   const [menuOpened, setMenuOpened] = useState(false)
   const mobileMenuButtonRef = useRef(null)
 
+  const menuLineStyle = 'border-t border-black w-full duration-100 dark:border-white'
+
   const mobileMenuButtonClicked = () => {
 
     menuOpened ? setMenuOpened(false) : setMenuOpened(true)
   }
-
 
   const disableScroll = (disable: boolean) => {
 
@@ -46,9 +47,9 @@ const AppHeader = () => {
 
   return (
     <div className='relative mb-28'>
-      <div className='fixed top-0 left-0 right-0 h-28 flex px-4 m-auto bg-white/80 backdrop-blur z-50 max-w-screen-md'>
+      <div className='fixed top-0 left-0 right-0 h-28 flex px-4 m-auto bg-white/80 dark:bg-slate-800/80 backdrop-blur z-50 max-w-screen-md'>
 
-        <div className='flex items-center justify-between w-full z-10 '>
+        <div className='flex items-center justify-between w-full z-10'>
 
           <Link href='/' passHref>
             <div className='flex items-center hover:cursor-pointer z-50'>
@@ -72,8 +73,8 @@ const AppHeader = () => {
             onClick={mobileMenuButtonClicked}
             ref={mobileMenuButtonRef}>
 
-            <div id={styles.menuLine1} className='border-t border-black w-full duration-100 mb-2' />
-            <div id={styles.menuLine2} className='border-t border-black w-full duration-100' />
+            <div id={styles.menuLine1} className={`${menuLineStyle} mb-2 dark:border-white`} />
+            <div id={styles.menuLine2} className={menuLineStyle} />
           </div>
 
         </div>

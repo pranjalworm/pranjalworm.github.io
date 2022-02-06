@@ -11,7 +11,7 @@ export default function Layout({ children }: {
   return (
     <>
 
-      <div className='max-w-screen-md px-4 mt-8 mx-auto'>
+      <div className='max-w-screen-md px-4 mt-8 mx-auto dark:text-white'>
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta

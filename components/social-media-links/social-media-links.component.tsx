@@ -76,7 +76,7 @@ const SocialMediaLinks = () => {
 
   return (
     <div onClick={openLink}
-      className='flex justify-between items-center m-auto h-16 max-w-screen-md'>
+      className='flex justify-between items-center m-auto h-16 max-w-screen-md dark:invert'>
       {
         WebLinks.map((linkItem) => (
           <Image src={linkItem.src}

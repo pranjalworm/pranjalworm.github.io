@@ -1,3 +1,7 @@
+export interface GlobalState {
+  theme: boolean
+}
+
 export interface PostMeta {
   id: string
   title: string

@@ -6,7 +6,9 @@ description: 'The quick brown fox jumps right over the lazy dog'
 thumbnail: 'self-bw-portrait.webp'
 ---
 
-![Pranjal Dubey's Self Portrait](https://pranjaldubey.com/images/self-bw-portrait.webp "Self Portrait")
+<div class="post-image-wrapper">
+  <img src="/images/self-bw-portrait.webp" class="post-image" alt="Pranjal Dubey's Self Portrait" />
+</div>
 
 There's a poem by Charles Bukowski
 

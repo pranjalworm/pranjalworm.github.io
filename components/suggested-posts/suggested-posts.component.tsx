@@ -26,7 +26,7 @@ const PostLink = (previous: boolean, post: PostMeta) => {
   return (
     <Link href={postHref} passHref>
       <div className={`flex gap-2 items-center hover:cursor-pointer ${flexDirection}`}>
-        <div className='flex items-center'>
+        <div className='flex items-center dark:invert'>
           <Image src={arrowPath}
             alt={altText}
             layout='fixed'
