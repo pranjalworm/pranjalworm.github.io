@@ -43,7 +43,16 @@ body {
 }
 
 
-/************************* STYLING FOR POSTS' IMAGES **************************/
+/******************************* STYLING FOR POSTS ****************************/
+
+a {
+  text-decoration: none;
+  color: #3675d4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 .post-image-wrapper {
   margin: 2rem auto;

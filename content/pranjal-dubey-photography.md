@@ -6,8 +6,8 @@ draft: false
 thumbnail: 'pranjal-dubey-photography-thumb.webp'
 ---
 
-<div class="post-image-wrapper">
-  <img src="/images/pranjal-dubey-photography-thumb.webp" class="post-image" alt="Silhouette of a fisherman casting his net" />
+<div class="my-8 mx-auto">
+  <img src="/images/pranjal-dubey-photography-thumb.webp" class="my-0 mx-auto" alt="Silhouette of a fisherman casting his net" />
 </div>
 
 Project website: [Pranjal Dubey Photography](https://pranjaldubey.photography "Pranjal Dubey Photography")
