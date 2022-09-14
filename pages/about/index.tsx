@@ -38,10 +38,11 @@ const About = () => {
         </p>
 
         <p className='mb-4'>
-          He has an OCD for reading almost anything interesting he can get his hands on or at least adding them to an ever growing to-read list.
+          He has an OCD for reading almost anything interesting he can get his 
+          hands on or at least adding them to an ever growing to-read list.
         </p>
         <p className='mb-4'>
-          Pau Bhaji is life for him.
+          Pizza &amp; Pau Bhaji are life for him.
         </p>
       </div>
 

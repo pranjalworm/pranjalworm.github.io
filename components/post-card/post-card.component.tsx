@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { PostMeta } from '../../common/interfaces'
 import { useRouter } from 'next/router'
 import { imageLoader } from '../../services/loader.service'
+import { getPostTypePath } from '../../common/utils'
 
 export default function PostCard(
   {
@@ -16,7 +17,9 @@ export default function PostCard(
 
   const navigateToPost = () => {
 
-    const hrefToPost = `/posts/${post.id}`
+    const path = getPostTypePath(post.type)
+
+    const hrefToPost = `/${path}/${post.id}`
 
     router.push(hrefToPost)
   }

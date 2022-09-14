@@ -1,9 +1,10 @@
 ---
-title: "A Dream 10 Years in the Making"
-date: "2021-04-16"
+title: 'A Dream 10 Years in the Making'
+date: '2021-04-16'
 draft: true
 description: 'The quick brown fox jumps right over the lazy dog'
 thumbnail: 'three-girlfriends.webp'
+type: blogpost
 ---
 
 Recently I bought a new Macbook Pro with the M1 chip. To some it might sound trivial but for me it was a dream 10 years in the making. Let me tell you how it came fruition.

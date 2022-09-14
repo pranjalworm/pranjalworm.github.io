@@ -2,6 +2,7 @@ import { PostMeta } from '../../common/interfaces'
 import Link from 'next/link'
 import Image from 'next/image'
 import { iconLoader } from '../../services/loader.service'
+import { getPostTypePath } from '../../common/utils'
 
 const PostLink = (previous: boolean, post: PostMeta) => {
 
@@ -20,7 +21,9 @@ const PostLink = (previous: boolean, post: PostMeta) => {
     flexDirection = 'flex-row-reverse'
   }
 
-  postHref = `/posts/${post.id}`
+  const path = getPostTypePath(post.type)
+
+  postHref = `/${path}/${post.id}`
 
   return (
     <Link href={postHref} passHref>
@@ -33,7 +36,7 @@ const PostLink = (previous: boolean, post: PostMeta) => {
             height='24'
             loader={iconLoader} />
         </div>
-        <div className='font-title'>
+        <div className='font-title' style={{textAlign: previous ? 'left' : 'right'}}>
           {post.title}
         </div>
       </div>

@@ -1,9 +1,10 @@
 ---
-title: "Kodaikanal"
-date: "2021-04-16"
+title: 'Kodaikanal'
+date: '2021-04-16'
 draft: true
 description: 'The quick brown fox jumps right over the lazy dog'
 thumbnail: 'kodai-waterfall.webp'
+type: blogpost
 ---
 
 Kodaikanal

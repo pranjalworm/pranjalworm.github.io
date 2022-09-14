@@ -23,12 +23,6 @@ const WebLinks = [
     src: 'instagram.svg'
   },
   {
-    id: emailLinkId,
-    link: 'mailto:hi@pranjaldubey.com',
-    alt: 'Email',
-    src: 'email.svg'
-  },
-  {
     id: linkedInLinkId,
     link: 'https://www.linkedin.com/in/pranjal-dubey/',
     alt: 'LinkedIn',

@@ -1,17 +1,17 @@
 ---
-date: "2021-03-19"
-description: "A tool to create css image filters. Useful for changing colors of SVG icons."
-title: "CSS Filter Generator"
+date: '2021-03-19'
+description: 'A tool to create css image filters. Useful for changing colors of SVG icons.'
+title: 'CSS Filter Generator'
 draft: false
 thumbnail: 'css-filter-generator-screenshot.webp'
+type: project
 ---
-
 
 <div class="post-image-wrapper">
   <img src="/images/css-filter-generator-screenshot.webp" class="post-image" alt="Screenshot of CSS Filter Generator" />
 </div>
 
-Project website: [CSS Filter Generator](https://pranjaldubey.com/css-filter-generator/ "CSS Filter Generator")
+Project website: [CSS Filter Generator](https://pranjaldubey.com/css-filter-generator/ 'CSS Filter Generator')
 
 This is a tool to create css image filters, quite useful for changing colors of SVG icons.
 
@@ -20,4 +20,3 @@ This project is based off Barrett Sonntag's codepen. The problem I faced when us
 In addition to that I placed all the computation logic inside a web worker so that it doesn't put strain on the main thread.
 
 You can checkout the source code [here](https://github.com/pranjalworm/css-filter-generator/).
-

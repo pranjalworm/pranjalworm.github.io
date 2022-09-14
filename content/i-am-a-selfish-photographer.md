@@ -1,9 +1,10 @@
 ---
-title: "I am a Selfish Photographer"
-date: "2021-03-19"
+title: 'I am a Selfish Photographer'
+date: '2021-03-19'
 draft: true
 description: 'The quick brown fox jumps right over the lazy dog'
 thumbnail: 'self-bw-portrait.webp'
+type: blogpost
 ---
 
 <div class="post-image-wrapper">
@@ -14,148 +15,136 @@ There's a poem by Charles Bukowski
 
 #### So You Want To Be A Writer
 
+_if it doesn't come bursting out of you_
 
-*if it doesn't come bursting out of you*
+_in spite of everything,_
 
-*in spite of everything,*
+_don't do it._
 
-*don't do it.*
+_unless it comes unasked out of your_
 
-*unless it comes unasked out of your*
+_heart and your mind and your mouth_
 
-*heart and your mind and your mouth*
+_and your gut,_
 
-*and your gut,*
+_don't do it._
 
-*don't do it.*
+_if you have to sit for hours_
 
-*if you have to sit for hours*
+_staring at your computer screen_
 
-*staring at your computer screen*
+_or hunched over your_
 
-*or hunched over your*
+_typewriter_
 
-*typewriter*
+_searching for words,_
 
-*searching for words,*
+_don't do it._
 
-*don't do it.*
+_if you're doing it for money or_
 
-*if you're doing it for money or*
+_fame,_
 
-*fame,*
+_don't do it._
 
-*don't do it.*
+_if you're doing it because you want_
 
-*if you're doing it because you want*
+_women in your bed,_
 
-*women in your bed,*
+_don't do it._
 
-*don't do it.*
+_if you have to sit there and_
 
-*if you have to sit there and*
+_rewrite it again and again,_
 
-*rewrite it again and again,*
+_don't do it._
 
-*don't do it.*
+_if it's hard work just thinking about doing it,_
 
-*if it's hard work just thinking about doing it,*
+_don't do it._
 
-*don't do it.*
+_if you're trying to write like somebody_
 
-*if you're trying to write like somebody*
+_else,_
 
-*else,*
+_forget about it._
 
-*forget about it.*
+_if you have to wait for it to roar out of_
 
-*if you have to wait for it to roar out of*
+_you,_
 
-*you,*
+_then wait patiently._
 
-*then wait patiently.*
+_if it never does roar out of you,_
 
-*if it never does roar out of you,*
+_do something else._
 
-*do something else.*
+_if you first have to read it to your wife_
 
+_or your girlfriend or your boyfriend_
 
+_or your parents or to anybody at all,_
 
-*if you first have to read it to your wife*
+_you're not ready._
 
-*or your girlfriend or your boyfriend*
+_don't be like so many writers,_
 
-*or your parents or to anybody at all,*
+_don't be like so many thousands of_
 
-*you're not ready.*
+_people who call themselves writers,_
 
+_don't be dull and boring and_
 
+_pretentious, don't be consumed with self-_
 
-*don't be like so many writers,*
+_love._
 
-*don't be like so many thousands of*
+_the libraries of the world have_
 
-*people who call themselves writers,*
+_yawned themselves to_
 
-*don't be dull and boring and*
+_sleep_
 
-*pretentious, don't be consumed with self-*
+_over your kind._
 
-*love.*
+_don't add to that._
 
-*the libraries of the world have*
+_don't do it._
 
-*yawned themselves to*
+_unless it comes out of_
 
-*sleep*
+_your soul like a rocket,_
 
-*over your kind.*
+_unless being still would_
 
-*don't add to that.*
+_drive you to madness or_
 
-*don't do it.*
+_suicide or murder,_
 
-*unless it comes out of*
+_don't do it._
 
-*your soul like a rocket,*
+_unless the sun inside you is_
 
-*unless being still would*
+_burning your gut,_
 
-*drive you to madness or*
+_don't do it._
 
-*suicide or murder,*
+_when it is truly time,_
 
-*don't do it.*
+_and if you have been chosen,_
 
-*unless the sun inside you is*
+_it will do it by_
 
-*burning your gut,*
+_itself and it will keep on doing it_
 
-*don't do it.*
+_until you die or it dies in you._
 
+_there is no other way._
 
+_and there never was._
 
-*when it is truly time,*
+Just like Bukowski, his poem is also quite controversial. It can be argued that people are not _born_ writers, photographers & painters. Maybe they are naturally better than others at doing something but it's only through their sheer hard work they are able to create art which make people stop and take notice and think. They push themselves to the very limits and even beyond that to create something which is truly a masterpiece.
 
-*and if you have been chosen,*
-
-*it will do it by*
-
-*itself and it will keep on doing it*
-
-*until you die or it dies in you.*
-
-*there is no other way.*
-
-
-
-*and there never was.*
-
-Just like Bukowski, his poem is also quite controversial. It can be argued that people are not *born* writers, photographers & painters. Maybe they are naturally better than others at doing something but it's only through their sheer hard work they are able to create art which make people stop and take notice and think. They push themselves to the very limits and even beyond that to create something which is truly a masterpiece.
-
-But I think for me it rings quite close to what I am like as a creative person. I am usually not able to force myself to create photographs. 
+But I think for me it rings quite close to what I am like as a creative person. I am usually not able to force myself to create photographs.
 
 I am not dependent on photography for my survival as I am a programmer by profession and that gives me the freedom of choosing my paid photoshoots.
-
-
-

@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout/layout'
-import { PostsService } from '../services/posts.service'
+import Layout, { siteTitle } from '../../components/layout/layout'
+import { PostsService } from '../../services/posts.service'
 import { GetStaticProps } from 'next'
 import React from 'react'
-import { PostMeta, PostType } from '../common/interfaces'
-import PostList from '../components/post-list/post-list.component'
+import { PostMeta, PostType } from '../../common/interfaces'
+import PostList from '../../components/post-list/post-list.component'
 
-export default function Home({ allPostsData }: {
+export default function ProjectsPage({ allPostsData }: {
   allPostsData: PostMeta[]
 }) {
 
@@ -25,7 +25,7 @@ export default function Home({ allPostsData }: {
 
 export const getStaticProps: GetStaticProps = async () => {
 
-  const allPostsData = PostsService.getSortedPostsData(PostType.BlogPost)
+  const allPostsData = PostsService.getSortedPostsData(PostType.Project)
 
   return {
     props: {

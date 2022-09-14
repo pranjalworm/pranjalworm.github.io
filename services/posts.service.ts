@@ -8,7 +8,7 @@ import remarkParse from 'remark-parse'
 import rehypeFormat from 'rehype-format'
 import rehypeStringify from 'rehype-stringify'
 import { isProduction } from '../utils'
-import { PostMeta } from '../common/interfaces'
+import { PostMeta, PostType } from '../common/interfaces'
 
 
 export namespace PostsService {
@@ -18,25 +18,23 @@ export namespace PostsService {
     return matterResult.data.draft
   }
 
+
   const getContentDirectoryPath = () => {
 
     return path.join(process.cwd(), 'content')
   }
 
 
-  const getPostMetaData = (fileName: string, matterResult: any) => {
+  const getPostId = (fileName: string) => {
 
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '')
 
-    return {
-      id,
-      ...(matterResult.data as { date: string; title: string, draft: boolean, thumbnail: string, description: string })
-    }
+    return id
   }
 
 
-  export function getSortedPostsData(count?: number) {
+  export function getSortedPostsData(type: PostType, count?: number) {
 
     const pathname = getContentDirectoryPath()
     const fileNames = fs.readdirSync(pathname)
@@ -44,7 +42,7 @@ export namespace PostsService {
     const filesCount = fileNames.length
     const postsCount = count && count <= filesCount ? count : fileNames.length
 
-    const allPostsData = [];
+    const allPostsMetaData = [];
 
     let i = 0
     let selectedPostsCount = 0
@@ -65,16 +63,22 @@ export namespace PostsService {
         continue
       }
 
-      const postData = getPostMetaData(fileName, matterResult)
+      const postId = getPostId(fileName)
 
-      allPostsData.push(postData)
+      const postMetaData = {
+        ...(matterResult.data as PostMeta), id: postId
+      }
 
-      selectedPostsCount++
+      if (postMetaData.type === type) {
+        allPostsMetaData.push(postMetaData)
+        selectedPostsCount++
+      }
+
       i++
     }
 
     // Sort posts by date
-    return allPostsData.sort((a, b) => {
+    return allPostsMetaData.sort((a, b) => {
       if (a.date < b.date) {
         return 1
       } else {
@@ -82,7 +86,7 @@ export namespace PostsService {
       }
     })
   }
-
+  
 
   export function getAllPostIds() {
 
@@ -131,9 +135,9 @@ export namespace PostsService {
   }
 
 
-  export const getSuggestedPosts = (currentPostId: string): PostMeta[] => {
+  export const getSuggestedPosts = (type: PostType, currentPostId: string): PostMeta[] => {
 
-    const allPosts = getSortedPostsData()
+    const allPosts = getSortedPostsData(type)
 
     let currentPostIndex = 1
 

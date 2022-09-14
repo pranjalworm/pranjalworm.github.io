@@ -1,9 +1,10 @@
 ---
-date: "2021-03-18"
+date: '2021-03-18'
 draft: false
-title: "Mandatory Hello World Post"
-description: "Well it would be borderline criminal for a programmer not to begin with a \"Hello World\" post."
+title: 'Mandatory Hello World Post'
+description: 'Well it would be borderline criminal for a programmer not to begin with a "Hello World" post.'
 thumbnail: 'pranjal-dubey.webp'
+type: blogpost
 ---
 
 "Hello World!"
@@ -21,7 +22,7 @@ I did a lot of beginner-level coding in C in my first year at college, it was ni
 
 It was nice changing (and breaking) a few things and seeing the result immediately. I loved how I could control the look of the page, giving bright flashy background colors to every `<div>` and setting the text to god-awful unreadable fonts (I thought they looked dope at that time).
 
-Soon afterwards I did a course on PHP (it was the "cool thing" way back then) and started working on multiple small projects (I eventually abandoned most of them). My first big real project was when I created a website for a student run NGO which worked on educating and providing basics needs to underprivileged kids. 
+Soon afterwards I did a course on PHP (it was the "cool thing" way back then) and started working on multiple small projects (I eventually abandoned most of them). My first big real project was when I created a website for a student run NGO which worked on educating and providing basics needs to underprivileged kids.
 
 That project taught me a ton of things. Like it was a better experience if I used the same body font on every page and eventually I realized it was much easier to write the damned styles in a separate CSS file and not write everything inline! Thinking about that last part still makes me cringe. I created a contact form with all the validation checks I could think of, which when submitted, appended the data to a text file I created on the server (because obviously I didn't setup a database). Then I realised it didn't matter how many dope features I added if no one ever visited it. So I also did a lot of SEO work for the website and in turn for the NGO. I created social media accounts for the NGO and put up backlinks everywhere I possibly could. And after a ton of effort I made the NGO appear in Google Knowledge Graph. I was so damn happy when I first saw that.
 
@@ -33,7 +34,6 @@ After college I moved to Bangalore (bye-bye Mathura) to work in a startup and th
     My office campus in Bangalore.
   </div>
 </div>
-
 
 Bangalore is a really nice city to live in (that is if you can tolerate the traffic). The weather is mostly pleasant and geographically it's located right in the middle of South India, so there are a lot of easily accessible places nearby if you like traveling.
 

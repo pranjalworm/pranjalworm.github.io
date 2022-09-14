@@ -6,7 +6,7 @@ import { PostContent, PostMeta, PostType } from '../../common/interfaces'
 
 const titleSuffix = 'Pranjal Dubey'
 
-export default function BlogPosts({
+export default function ProjectPosts({
   postContent,
   suggestedPosts
 }: {
@@ -21,6 +21,7 @@ export default function BlogPosts({
   )
 }
 
+
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = PostsService.getAllPostIds()
   return {
@@ -29,11 +30,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
+
 export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   const postId = params?.id as string
   const postContent = await PostsService.getPostContent(postId)
-  const suggestedPosts = PostsService.getSuggestedPosts(PostType.BlogPost, postId)
+  const suggestedPosts = PostsService.getSuggestedPosts(PostType.Project, postId)
 
   return {
     props: {

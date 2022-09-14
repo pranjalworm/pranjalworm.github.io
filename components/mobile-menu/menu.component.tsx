@@ -32,6 +32,12 @@ const Menu = ({ show }: {
         </div>
       </Link>
 
+      <Link href='/projects' passHref>
+        <div className={getClass('/projects')}>
+          Projects
+        </div>
+      </Link>
+
       <Link href='/about' passHref>
         <div className={getClass('/about')}>
           About
