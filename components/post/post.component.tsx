@@ -5,15 +5,13 @@ import { PostContent, PostMeta } from '../../common/interfaces'
 import styles from './post.module.css'
 import SuggestedPosts from '../suggested-posts/suggested-posts.component'
 
-
 export default function Post({
   postContent,
   suggestedPosts,
 }: {
-  postContent: PostContent,
+  postContent: PostContent
   suggestedPosts: PostMeta[]
 }) {
-
   const pageTitle = `${postContent.title} - ${postContent.titleSuffix}`
 
   return (
@@ -34,7 +32,6 @@ export default function Post({
       {/* <SharePost /> */}
 
       <SuggestedPosts posts={suggestedPosts} />
-
     </Layout>
   )
 }

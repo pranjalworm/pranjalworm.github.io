@@ -1,3 +1,22 @@
 {
-  "editor.fontSize": 13
+  "editor.tabSize": 2,
+  "editor.rulers": [100],
+  "editor.detectIndentation": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 100,
+  "prettier.singleAttributePerLine": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.trailingComma": "none",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "task.quickOpen.history": 20,
+  "workbench.startupEditor": "none",
+  "typescript.format.insertSpaceAfterTypeAssertion": true
 }
