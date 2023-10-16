@@ -41,9 +41,7 @@ Now that I was finally a "Software Engineer" by profession, it was fun to live i
 
 Living amongst that many pro-techies nurtures the baby-techie within yourself. So I started thinking about creating my own personal website. My little home on the Internet. I started writing some code using Google's AMP tech because I wanted it to be crazy fast. I remember putting a lot of effort into it initially, but for some reasons which I don't clearly remember now it lost traction and I eventually shut down the domain.
 
-Then sometime back I deleted my Facebook account (because obviously) and also I permanently lost access to my Twitter account because I forgot where I saved the 2FA codes. May your ghost continue to live on [@pranjalworm](https://twitter.com/pranjalworm).
-
-I irregularly post on my [Instagram account](https://www.instagram.com/pranjalworm). I liked Instagram's original idea, a social network for artists, but I absolutely abhor the pile of shit it has eventually turned into. Thanks again Facebook.
+Then sometime back I deleted my Facebook account (because obviously) and I liked Instagram's original idea, a social network for artists, but I absolutely abhor the pile of shit it has eventually turned into. Thanks again Facebook.
 
 Once again I felt the need to create something which I could call my own. About a year back, I started working on my [photography website](https://pranjaldubey.photography), but I can only put up my photography related stuff there and also it's meant to be primarily seen by my potential photoshoot clients. So it's built from the ground up to emphasize the "professional" photographer aspect of me.
 

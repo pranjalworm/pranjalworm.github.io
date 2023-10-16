@@ -58,6 +58,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.nav-link:hover {
+  text-decoration: none;
+}
+
 .post-image-wrapper {
   margin: 2rem auto;
   text-align: center;
