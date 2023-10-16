@@ -6,7 +6,6 @@
 
 /******************************* TAILWIND CUSTOM ******************************/
 
-
 /* desktop */
 @media all and (min-width: 768px) {
   .c-md-min-w-half {
@@ -17,7 +16,6 @@
     margin-left: 4rem;
   }
 }
-
 
 /******************************** BASIC RESETS ********************************/
 
@@ -31,6 +29,13 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 /* needs to be done when menu is open */
 .disableScroll {
   margin: 0;
@@ -41,7 +46,6 @@ body {
   right: 0;
   bottom: 0;
 }
-
 
 /******************************* STYLING FOR POSTS ****************************/
 
@@ -71,7 +75,6 @@ a:hover {
   margin-top: 1rem;
   font-style: italic;
 }
-
 
 /*************************** STYLING FOR POSTS' TEXT **************************/
 

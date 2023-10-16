@@ -3,15 +3,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { imageLoader } from '../../services/loader.service'
 
-
 const About = () => {
-
   const siteTitle = 'About - Pranjal Dubey'
   const aboutImage = 'pranjal-about.webp'
 
   return (
     <Layout>
-
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -30,26 +27,21 @@ const About = () => {
 
       <div className={`mt-8 textContent`}>
         <p className='mb-4'>
-          Pranjal Dubey is a Bangalore based programmer currently working in Freshworks.
+          I am frontend developer (transitioning to full-stack) based out of
+          Bangalore.
         </p>
 
         <p className='mb-4'>
-          He&apos;s also a part time photographer and loves creating silhouettes.
+          I like reading just about anything interesting, traveling and
+          capturing silhouettes during my free time.
         </p>
 
         <p className='mb-4'>
-          He has an OCD for reading almost anything interesting he can get his 
-          hands on or at least adding them to an ever growing to-read list.
-        </p>
-        <p className='mb-4'>
-          Pizza &amp; Pau Bhaji are life for him.
+          My mom&apos;s Pau Bhaji &amp; Pizza are life for me.
         </p>
       </div>
-
     </Layout>
   )
-
 }
 
 export default About
-
