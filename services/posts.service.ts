@@ -98,8 +98,8 @@ export namespace PostsService {
         params: {
           id: fileName.replace(/\.md$/, '')
         }
-      }
-    })
+      };
+    });
   }
 
 
