@@ -2,7 +2,7 @@ import styles from './app-header.module.css'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import Menu from '../mobile-menu/menu.component'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { imageLoader } from '../../services/loader.service'
 
 const AppHeader = () => {
@@ -53,11 +53,9 @@ const AppHeader = () => {
                   src='pranjal-profile-pic.webp'
                   className='rounded-full'
                   alt='Pranjal Dubey Photograph'
-                  layout='fixed'
                   width='50'
                   height='50'
-                  loader={imageLoader}
-                />
+                  loader={imageLoader} />
               </div>
 
               <div className='font-title text-4xl text-black dark:text-white'>
@@ -84,7 +82,7 @@ const AppHeader = () => {
 
       <Menu show={menuOpened} />
     </div>
-  )
+  );
 }
 
 export default AppHeader

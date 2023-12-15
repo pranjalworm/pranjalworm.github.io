@@ -1,6 +1,6 @@
 import React from 'react'
 import Date from '../date/date.component'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { PostMeta } from '../../common/interfaces'
 import { useRouter } from 'next/router'
 import { imageLoader } from '../../services/loader.service'
@@ -25,11 +25,13 @@ export default function PostCard({ post }: { post: PostMeta }) {
       <div className='relative flex justify-center items-center h-[250px] mb-4 max-w-screen-md c-md-min-w-half'>
         <Image
           src={`${post.thumbnail}`}
-          layout='fill'
-          objectFit='cover'
           alt=''
           loader={imageLoader}
-        />
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover"
+          }} />
       </div>
 
       <div className='c-md-ml-16 grow'>
@@ -42,5 +44,5 @@ export default function PostCard({ post }: { post: PostMeta }) {
         <div className='textContent'>{post.description}</div>
       </div>
     </div>
-  )
+  );
 }

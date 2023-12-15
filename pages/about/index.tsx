@@ -1,6 +1,6 @@
 import Layout from '../../components/layout/layout'
 import Head from 'next/head'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { imageLoader } from '../../services/loader.service'
 
 const About = () => {
@@ -16,13 +16,16 @@ const About = () => {
       <div className='relative block my-0 mx-auto md:w-1/2'>
         <Image
           src={aboutImage}
-          layout='responsive'
           width='200'
           height='300'
           priority
           alt='Portrait of Pranjal Dubey'
           loader={imageLoader}
-        />
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto"
+          }} />
       </div>
 
       <div className={`mt-8 textContent`}>
@@ -41,7 +44,7 @@ const About = () => {
         </p>
       </div>
     </Layout>
-  )
+  );
 }
 
 export default About

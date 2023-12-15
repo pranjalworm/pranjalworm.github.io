@@ -1,5 +1,5 @@
 import styles from './share-post.module.css'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { iconLoader } from '../../services/loader.service'
 
 const SharePost = () => {
@@ -13,27 +13,27 @@ const SharePost = () => {
 
       <div className={styles.shareLinksIconsWrapper}>
         <div>
-          <Image src='share.svg'
+          <Image
+            src='share.svg'
             alt='Copy post link'
-            layout='fixed'
             width='24'
             height='24'
             loader={iconLoader} />
         </div>
 
         <div>
-          <Image src='twitter.svg'
+          <Image
+            src='twitter.svg'
             alt='Share on Twitter'
-            layout='fixed'
             width='24'
             height='24'
             loader={iconLoader} />
         </div>
 
         <div>
-          <Image src='email.svg'
+          <Image
+            src='email.svg'
             alt='Email to friend'
-            layout='fixed'
             width='24'
             height='24'
             loader={iconLoader} />
@@ -41,7 +41,7 @@ const SharePost = () => {
 
       </div>
     </div>
-  )
+  );
 }
 
 export default SharePost

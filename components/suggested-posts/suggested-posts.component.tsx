@@ -1,6 +1,6 @@
 import { PostMeta } from '../../common/interfaces'
 import Link from 'next/link'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { iconLoader } from '../../services/loader.service'
 import { getPostTypePath } from '../../common/utils'
 
@@ -29,20 +29,14 @@ const PostLink = (previous: boolean, post: PostMeta) => {
     <Link href={postHref} passHref>
       <div className={`flex gap-2 items-center hover:cursor-pointer ${flexDirection}`}>
         <div className='flex items-center dark:invert'>
-          <Image src={arrowPath}
-            alt={altText}
-            layout='fixed'
-            width='24'
-            height='24'
-            loader={iconLoader} />
+          <Image src={arrowPath} alt={altText} width='24' height='24' loader={iconLoader} />
         </div>
         <div className='font-title' style={{textAlign: previous ? 'left' : 'right'}}>
           {post.title}
         </div>
       </div>
     </Link>
-
-  )
+  );
 }
 
 
