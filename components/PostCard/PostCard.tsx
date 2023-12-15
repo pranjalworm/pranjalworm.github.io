@@ -1,5 +1,5 @@
 import React from 'react'
-import Date from '../Date/Date.component'
+import Date from '../Date'
 import Image from 'next/image'
 import { PostMeta } from '../../common/interfaces'
 import { useRouter } from 'next/router'

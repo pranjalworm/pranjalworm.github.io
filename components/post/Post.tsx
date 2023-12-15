@@ -1,9 +1,9 @@
-import Layout from '../Layout/Layout'
+import Layout from '../Layout'
 import Head from 'next/head'
-import Date from '../Date/Date.component'
+import Date from '../Date'
 import { PostContent, PostMeta } from '../../common/interfaces'
 import styles from './post.module.css'
-import SuggestedPosts from '../SuggestedPosts/SuggestedPosts'
+import SuggestedPosts from '../SuggestedPosts'
 
 export default function Post({
   postContent,

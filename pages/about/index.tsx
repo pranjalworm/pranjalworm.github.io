@@ -1,4 +1,4 @@
-import Layout from '../../components/Layout/Layout'
+import Layout from '../../components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import { imageLoader } from '../../services/loader.service'

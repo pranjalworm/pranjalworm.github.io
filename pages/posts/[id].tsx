@@ -1,7 +1,7 @@
 import { PostsService } from '../../services/posts.service'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import React from 'react'
-import Post from '../../components/Post/Post'
+import Post from '../../components/Post'
 import { PostContent, PostMeta, PostType } from '../../common/interfaces'
 
 const titleSuffix = 'Pranjal Dubey'

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import ToggleThemeButton from '../ToggleThemeButton/ToggleThemeButton'
+import ToggleThemeButton from '../ToggleThemeButton'
 
 const Menu = ({ show }: { show: boolean }) => {
   const router = useRouter()

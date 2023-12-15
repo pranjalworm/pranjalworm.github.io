@@ -1,7 +1,7 @@
 import styles from './app-header.module.css'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
-import Menu from '../Menu/Menu'
+import Menu from '../Menu'
 import Image from 'next/image'
 import { imageLoader } from '../../services/loader.service'
 

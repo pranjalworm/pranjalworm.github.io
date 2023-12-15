@@ -1,6 +1,6 @@
 import React from 'react'
 import { PostMeta } from '../../common/interfaces'
-import PostCard from '../PostCard/PostCard'
+import PostCard from '../PostCard'
 
 function PostList({ postsData }: { postsData: PostMeta[] }) {
   return (

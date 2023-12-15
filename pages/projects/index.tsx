@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Layout from '../../components/Layout/Layout'
+import Layout from '../../components/Layout'
 import { PostsService } from '../../services/posts.service'
 import { GetStaticProps } from 'next'
 import React from 'react'
 import { PostMeta, PostType } from '../../common/interfaces'
-import PostList from '../../components/PostList/PostList'
+import PostList from '../../components/PostList'
 import { siteTitle } from '../../common/constants'
 
 export default function ProjectsPage({
