@@ -7,49 +7,39 @@ import rehypeRaw from 'rehype-raw'
 import remarkParse from 'remark-parse'
 import rehypeFormat from 'rehype-format'
 import rehypeStringify from 'rehype-stringify'
-import { isProduction } from '../utils'
+import { isProduction } from '../dev-utils'
 import { PostMeta, PostType } from '../common/interfaces'
 
-
 export namespace PostsService {
-
   const isInDraftPhase = (matterResult: any) => {
-
     return matterResult.data.draft
   }
 
-
   const getContentDirectoryPath = () => {
-
     return path.join(process.cwd(), 'content')
   }
 
-
   const getPostId = (fileName: string) => {
-
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '')
 
     return id
   }
 
-
   export function getSortedPostsData(type: PostType, count?: number) {
-
     const pathname = getContentDirectoryPath()
     const fileNames = fs.readdirSync(pathname)
 
     const filesCount = fileNames.length
     const postsCount = count && count <= filesCount ? count : fileNames.length
 
-    const allPostsMetaData = [];
+    const allPostsMetaData = []
 
     let i = 0
     let selectedPostsCount = 0
 
     while (i < filesCount && selectedPostsCount < postsCount) {
-
-      const fileName = fileNames[i];
+      const fileName = fileNames[i]
 
       // Read markdown file as string
       const fullPath = path.join(pathname, fileName)
@@ -66,7 +56,8 @@ export namespace PostsService {
       const postId = getPostId(fileName)
 
       const postMetaData = {
-        ...(matterResult.data as PostMeta), id: postId
+        ...(matterResult.data as PostMeta),
+        id: postId,
       }
 
       if (postMetaData.type === type) {
@@ -86,25 +77,21 @@ export namespace PostsService {
       }
     })
   }
-  
 
   export function getAllPostIds() {
-
     const pathname = getContentDirectoryPath()
 
     const fileNames = fs.readdirSync(pathname)
-    return fileNames.map(fileName => {
+    return fileNames.map((fileName) => {
       return {
         params: {
-          id: fileName.replace(/\.md$/, '')
-        }
-      };
-    });
+          id: fileName.replace(/\.md$/, ''),
+        },
+      }
+    })
   }
 
-
   export async function getPostContent(id: string) {
-
     const pathname = getContentDirectoryPath()
 
     const fullPath = path.join(pathname, `${id}.md`)
@@ -130,19 +117,19 @@ export namespace PostsService {
     return {
       id,
       contentHtml,
-      ...(matterResult.data as { date: string; title: string })
+      ...(matterResult.data as { date: string; title: string }),
     }
   }
 
-
-  export const getSuggestedPosts = (type: PostType, currentPostId: string): PostMeta[] => {
-
+  export const getSuggestedPosts = (
+    type: PostType,
+    currentPostId: string
+  ): PostMeta[] => {
     const allPosts = getSortedPostsData(type)
 
     let currentPostIndex = 1
 
     for (let i = 0; i < allPosts.length; i++) {
-
       const post = allPosts[i]
 
       if (post.id === currentPostId) {
@@ -156,5 +143,4 @@ export namespace PostsService {
 
     return [prevPost, nextPost]
   }
-
 }

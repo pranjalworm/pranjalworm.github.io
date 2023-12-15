@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import AppHeader from '../app-header/app-header.component'
-import AppFooter from '../app-footer/app-footer.component'
-
-export const siteTitle = 'Pranjal Dubey'
+import AppHeader from '../AppHeader/AppHeader'
+import AppFooter from '../AppFooter/AppFooter'
+import { siteTitle } from '../../common/constants'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

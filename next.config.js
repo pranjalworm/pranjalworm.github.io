@@ -1,11 +1,14 @@
-module.exports = {
+const nextConfig = {
+  output: 'export',
   experimental: {
     scrollRestoration: true,
   },
   env: {
-    BASE_URL: 'https://pranjaldubey.com'
+    BASE_URL: 'https://pranjaldubey.com',
   },
   images: {
-    loader: 'custom'
-  }
+    loader: 'custom',
+  },
 }
+
+module.exports = nextConfig

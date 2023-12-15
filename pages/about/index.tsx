@@ -1,6 +1,6 @@
-import Layout from '../../components/layout/layout'
+import Layout from '../../components/Layout/Layout'
 import Head from 'next/head'
-import Image from "next/image"
+import Image from 'next/image'
 import { imageLoader } from '../../services/loader.service'
 
 const About = () => {
@@ -21,11 +21,12 @@ const About = () => {
           priority
           alt='Portrait of Pranjal Dubey'
           loader={imageLoader}
-          sizes="100vw"
+          sizes='100vw'
           style={{
-            width: "100%",
-            height: "auto"
-          }} />
+            width: '100%',
+            height: 'auto',
+          }}
+        />
       </div>
 
       <div className={`mt-8 textContent`}>
@@ -44,7 +45,7 @@ const About = () => {
         </p>
       </div>
     </Layout>
-  );
+  )
 }
 
 export default About
