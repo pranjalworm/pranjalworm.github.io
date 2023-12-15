@@ -1,6 +1,6 @@
 import React from 'react'
 import Date from '../date/date.component'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { PostMeta } from '../../common/interfaces'
 import { useRouter } from 'next/router'
 import { imageLoader } from '../../services/loader.service'

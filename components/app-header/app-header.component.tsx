@@ -2,7 +2,7 @@ import styles from './app-header.module.css'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import Menu from '../mobile-menu/menu.component'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { imageLoader } from '../../services/loader.service'
 
 const AppHeader = () => {

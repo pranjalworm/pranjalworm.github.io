@@ -1,5 +1,5 @@
 import styles from './share-post.module.css'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { iconLoader } from '../../services/loader.service'
 
 const SharePost = () => {

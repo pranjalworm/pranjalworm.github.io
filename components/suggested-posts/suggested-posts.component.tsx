@@ -1,6 +1,6 @@
 import { PostMeta } from '../../common/interfaces'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { iconLoader } from '../../services/loader.service'
 import { getPostTypePath } from '../../common/utils'
 
