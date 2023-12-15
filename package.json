@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "NODE_ENV=production next build",
-    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "./build-script.sh",
+    "next-build": "NODE_ENV=production next build && mv out docs",
+    "postbuild": "next-sitemap"
   },
   "lint-staged": {
     "*.ts": "eslint --fix",
