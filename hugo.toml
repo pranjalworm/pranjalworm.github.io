@@ -1,7 +1,6 @@
 baseURL = "https://pranjaldubey.com/"
 languageCode = "en-us"
 title = "Pranjal Dubey"
-publishDir = "docs"
 enableRobotsTXT = true
 
 [sitemap]

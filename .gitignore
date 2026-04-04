@@ -1,7 +1,7 @@
 # Hugo
 /resources/_gen/
 .hugo_build.lock
-docs
+public
 
 # Misc
 **/.DS_Store
