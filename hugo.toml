@@ -1,0 +1,18 @@
+baseURL = "https://pranjaldubey.com/"
+languageCode = "en-us"
+title = "Pranjal Dubey"
+publishDir = "docs"
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.7
+
+[permalinks]
+  posts = "/posts/:contentbasename/"
+  projects = "/projects/:contentbasename/"
+
+[taxonomies]
+
+[params]
+  description = "Pranjal Dubey's personal blogging website"

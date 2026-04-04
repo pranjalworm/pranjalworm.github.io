@@ -1,0 +1,8 @@
+{{ define "main" }}
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ $posts = sort $posts ".Date" "desc" }}
+  {{ range $index, $post := $posts }}
+    {{ if $index }}<hr class="post-card-divider">{{ end }}
+    {{- partial "post-card.html" $post -}}
+  {{ end }}
+{{ end }}

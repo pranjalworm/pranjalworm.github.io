@@ -1,0 +1,548 @@
+/* ============================== RESETS & BASE ============================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  background-color: #fff;
+}
+
+html.dark body {
+  background-color: #1f2937; /* gray-800 */
+  color: #fff;
+}
+
+/* ================================= LINKS ================================== */
+
+a {
+  text-decoration: none;
+  color: #3675d4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-link {
+  color: inherit;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}
+
+/* ============================== FOCUS STYLES ============================== */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #3675d4;
+  outline-offset: 2px;
+}
+
+/* ============================== SCROLL LOCK =============================== */
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+/* ============================== ANIMATIONS ================================ */
+
+@keyframes moveUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  50% { opacity: 0.8; }
+  to { opacity: 1; }
+}
+
+/* ============================= SITE LAYOUT ================================ */
+
+.site-container {
+  max-width: 768px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin: 2rem auto 0;
+}
+
+html.dark .site-container {
+  color: #fff;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+/* =============================== HEADER =================================== */
+
+.site-header {
+  position: relative;
+  margin-bottom: 7rem;
+}
+
+.header-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7rem;
+  display: flex;
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 768px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 50;
+}
+
+html.dark .header-bar {
+  background-color: rgba(31, 41, 55, 0.8);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  z-index: 50;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  margin-right: 1rem;
+  width: 50px;
+  height: 50px;
+}
+
+.site-title {
+  font-family: "futura-pt", sans-serif;
+  font-size: 2.25rem;
+  color: #000;
+}
+
+html.dark .site-title {
+  color: #fff;
+}
+
+/* ============================ DESKTOP NAV ================================= */
+
+.desktop-nav {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.desktop-nav-item {
+  font-family: "futura-pt", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #000;
+}
+
+html.dark .desktop-nav-item {
+  color: #fff;
+}
+
+.desktop-nav-item.active {
+  border-bottom: 1px solid #000;
+}
+
+html.dark .desktop-nav-item.active {
+  border-bottom-color: #fff;
+}
+
+/* ============================ HAMBURGER MENU ============================== */
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 3rem;
+  z-index: 20;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #000;
+  transition: all 100ms ease;
+}
+
+html.dark .hamburger-line {
+  border-top-color: #fff;
+}
+
+.hamburger-line:first-child {
+  margin-bottom: 0.5rem;
+}
+
+/* Hamburger to X animation */
+.menu-open .hamburger-line:first-child {
+  z-index: 20;
+  width: 80%;
+  transform: rotate(45deg) translate(2px, 5px);
+}
+
+.menu-open .hamburger-line:last-child {
+  z-index: 30;
+  transform-origin: center;
+  width: 80%;
+  transform: rotate(-45deg) translate(0px, -5px);
+}
+
+/* ====================== RESPONSIVE: DESKTOP NAV =========================== */
+
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu-overlay {
+    display: none !important;
+  }
+}
+
+/* ============================== MENU OVERLAY ============================== */
+
+.menu-overlay {
+  position: fixed;
+  top: 7rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 10;
+  animation: fadeIn 0.2s ease-in;
+}
+
+html.dark .menu-overlay {
+  background-color: rgba(31, 41, 55, 0.8);
+}
+
+.menu-overlay.open {
+  display: flex;
+}
+
+.menu-item {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  user-select: none;
+  color: #000;
+  animation: moveUp 0.4s ease-out;
+}
+
+html.dark .menu-item {
+  color: #fff;
+}
+
+.menu-item.active {
+  border-bottom: 1px solid #000;
+}
+
+html.dark .menu-item.active {
+  border-bottom-color: #fff;
+}
+
+.menu-item:not(.active) {
+  cursor: pointer;
+}
+
+.menu-overlay .theme-toggle {
+  animation: moveUp 0.4s ease-out;
+}
+
+/* ========================== DARK MODE TOGGLE ============================== */
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html.dark .theme-toggle {
+  color: #fff;
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+/* Sun icon visible in dark mode, moon in light */
+.icon-sun { display: none; }
+.icon-moon { display: block; }
+
+html.dark .icon-sun { display: block; }
+html.dark .icon-moon { display: none; }
+
+/* =============================== POST CARD ================================ */
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  cursor: pointer;
+}
+
+.post-card-image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.post-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-card-text {
+  flex-grow: 1;
+}
+
+.post-card-title {
+  font-family: "futura-pt", sans-serif;
+  font-size: 1.875rem;
+  margin-bottom: 1rem;
+}
+
+.post-card-description {
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.post-card-divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 2rem 0;
+}
+
+html.dark .post-card-divider {
+  border-top-color: #374151;
+}
+
+@media (min-width: 768px) {
+  .post-card {
+    flex-direction: row;
+  }
+
+  .post-card-image-wrapper {
+    min-width: 50%;
+  }
+
+  .post-card-text {
+    margin-left: 4rem;
+  }
+}
+
+/* ================================ DATE ==================================== */
+
+.post-date {
+  font-size: 0.875rem;
+  color: #9ca3af; /* gray-400 */
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+/* ============================ POST CONTENT ================================ */
+
+.post-content {
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.post-content p {
+  margin-bottom: 1rem;
+}
+
+.post-content img {
+  display: block;
+  max-width: 100%;
+  max-height: 80vh;
+  margin: 2rem auto;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  font-family: "futura-pt", sans-serif;
+  margin: 1.5rem 0 1rem;
+}
+
+.post-content figure {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.post-content figure img {
+  max-width: 100%;
+  max-height: 80vh;
+  margin: 0 auto;
+}
+
+.post-content figcaption {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.post-content figcaption a {
+  font-style: italic;
+}
+
+.post-title {
+  font-family: "futura-pt", sans-serif;
+  font-size: 1.875rem;
+}
+
+/* ========================= SUGGESTED POSTS ================================ */
+
+.suggested-posts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.suggested-link {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: inherit;
+}
+
+.suggested-link:hover {
+  text-decoration: none;
+}
+
+.suggested-link-title {
+  font-family: "futura-pt", sans-serif;
+}
+
+.suggested-link-next {
+  flex-direction: row-reverse;
+}
+
+.suggested-link-next .suggested-link-title {
+  text-align: right;
+}
+
+.suggested-link-icon {
+  display: flex;
+  align-items: center;
+}
+
+html.dark .suggested-link-icon {
+  filter: invert(1);
+}
+
+/* ================================ FOOTER ================================== */
+
+.site-footer {
+  color: #6b7280; /* gray-500 */
+  background-color: #f3f4f6; /* gray-100 */
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 6rem;
+}
+
+html.dark .site-footer {
+  background-color: #111827; /* gray-900 */
+  color: #fff;
+}
+
+/* ============================== ABOUT PAGE ================================ */
+
+.about-image-wrapper {
+  display: block;
+  margin: 0 auto;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .about-image-wrapper {
+    width: 50%;
+  }
+}

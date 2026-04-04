@@ -1,0 +1,23 @@
+<div class="suggested-posts">
+  {{ with .PrevInSection }}
+    <a href="{{ .RelPermalink }}" class="nav-link suggested-link">
+      <div class="suggested-link-icon">
+        <img src="/icons/arrow-back.svg" alt="Previous" width="24" height="24">
+      </div>
+      <div class="suggested-link-title">{{ .Title }}</div>
+    </a>
+  {{ else }}
+    <div></div>
+  {{ end }}
+
+  {{ with .NextInSection }}
+    <a href="{{ .RelPermalink }}" class="nav-link suggested-link suggested-link-next">
+      <div class="suggested-link-icon">
+        <img src="/icons/arrow-forward.svg" alt="Next" width="24" height="24">
+      </div>
+      <div class="suggested-link-title">{{ .Title }}</div>
+    </a>
+  {{ else }}
+    <div></div>
+  {{ end }}
+</div>

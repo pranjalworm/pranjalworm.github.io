@@ -1,0 +1,8 @@
+{{ define "main" }}
+  {{ $projects := where .Site.RegularPages "Section" "projects" }}
+  {{ $projects = sort $projects ".Date" "desc" }}
+  {{ range $index, $project := $projects }}
+    {{ if $index }}<hr class="post-card-divider">{{ end }}
+    {{- partial "post-card.html" $project -}}
+  {{ end }}
+{{ end }}
