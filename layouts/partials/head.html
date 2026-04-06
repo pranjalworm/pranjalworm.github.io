@@ -10,11 +10,11 @@
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
-{{ with .Params.thumbnail }}<meta property="og:image" content="{{ $.Site.BaseURL }}images/{{ . }}">{{ end }}
+{{ with .Params.thumbnail }}{{ $thumb := $.Resources.GetMatch . }}{{ with $thumb }}<meta property="og:image" content="{{ .Permalink }}">{{ end }}{{ end }}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta name="twitter:description" content="{{ $desc }}">
-{{ with .Params.thumbnail }}<meta name="twitter:image" content="{{ $.Site.BaseURL }}images/{{ . }}">{{ end }}
+{{ with .Params.thumbnail }}{{ $thumb := $.Resources.GetMatch . }}{{ with $thumb }}<meta name="twitter:image" content="{{ .Permalink }}">{{ end }}{{ end }}
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 {{ $css := resources.Get "css/main.css" }}
 {{ if hugo.IsProduction }}

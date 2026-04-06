@@ -6,7 +6,7 @@ draft: false
 thumbnail: 'css-filter-generator-screenshot.webp'
 ---
 
-{{< figure src="/images/css-filter-generator-screenshot.webp" alt="Screenshot of CSS Filter Generator" >}}
+{{< figure src="css-filter-generator-screenshot.webp" alt="Screenshot of CSS Filter Generator" >}}
 
 Project website: [CSS Filter Generator](https://pranjaldubey.com/css-filter-generator/ "CSS Filter Generator")
 

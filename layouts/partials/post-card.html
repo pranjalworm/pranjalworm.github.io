@@ -1,9 +1,12 @@
 <a href="{{ .RelPermalink }}" class="nav-link post-card">
   <div class="post-card-image-wrapper">
-    <img src="/images/{{ .Params.thumbnail }}"
-         alt="{{ .Title }}"
+    {{ $thumb := .Resources.GetMatch .Params.thumbnail }}
+    {{ with $thumb }}
+    <img src="{{ .RelPermalink }}"
+         alt="{{ $.Title }}"
          class="post-card-image"
          loading="lazy">
+    {{ end }}
   </div>
 
   <div class="post-card-text">

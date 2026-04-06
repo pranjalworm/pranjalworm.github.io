@@ -6,4 +6,4 @@ draft: true
 thumbnail: 'the-corner.jpg'
 ---
 
-{{< figure src="/images/the-corner.jpg" alt="The corner" >}}
+{{< figure src="the-corner.jpg" alt="The corner" >}}

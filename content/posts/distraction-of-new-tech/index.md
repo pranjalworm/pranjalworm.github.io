@@ -6,7 +6,7 @@ description: 'Do I really need that latest fastest shiny piece of tech?'
 thumbnail: 'hazy-keyboard.webp'
 ---
 
-{{< figure src="/images/hazy-keyboard.webp" alt="Hazy Keyboard" caption="Photo by [Anton Maksimov 5642.su](https://unsplash.com/@juvnsky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/technology?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)" >}}
+{{< figure src="hazy-keyboard.webp" alt="Hazy Keyboard" caption="Photo by [Anton Maksimov 5642.su](https://unsplash.com/@juvnsky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/technology?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)" >}}
 
 When I was a kid I got hooked onto reading comics and books. I would spend hours at a time just glommed on to a thick book with my nose deep into its pages and my mind lost in its world. I imagined living alongside the characters and I loved to be a part of their adventures.
 
@@ -28,7 +28,7 @@ There are so many new technologies coming out every few months that it's hard to
 
 And it's not just in the world of coding. It's the same thing with gadgets too. The latest iPhone is (obviously) better than your current iPhone. The latest model of your computer has a 20% faster processor and twice the disk speeds. The latest Sony headphones have better noise cancellation. The latest Kindle has USB-C and it is water resistant! The list goes on and on.
 
-{{< figure src="/images/gadgets.webp" alt="Gadgets" caption="Photo by [Julian O'hayon](https://unsplash.com/@anckor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/gadgets?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)" >}}
+{{< figure src="gadgets.webp" alt="Gadgets" caption="Photo by [Julian O'hayon](https://unsplash.com/@anckor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/gadgets?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)" >}}
 
 Each time a new model of a gadget comes out Youtube's feed saturates with content oozing with superlatives. We are bombarded with a plethora of miniscule delta gains over and over again till the time we start feeling that maybe we do *need* that extra power, that extra battery life, that extra bright display.
 

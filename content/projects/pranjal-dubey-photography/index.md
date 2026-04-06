@@ -1,12 +1,12 @@
 ---
 date: '2021-05-01'
-description: 'An ongoing attempt to document my photography.'
+description: 'An attempt to document my photography.'
 title: 'Pranjal Dubey Photography'
 draft: false
 thumbnail: 'pranjal-dubey-photography-thumb.webp'
 ---
 
-{{< figure src="/images/pranjal-dubey-photography-thumb.webp" alt="Silhouette of a fisherman casting his net" caption="Silhouette of a fisherman casting his net" >}}
+{{< figure src="pranjal-dubey-photography-thumb.webp" alt="Silhouette of a fisherman casting his net" caption="Silhouette of a fisherman casting his net" >}}
 
 Project website: [Pranjal Dubey Photography](https://pranjaldubey.photography "Pranjal Dubey Photography")
 
