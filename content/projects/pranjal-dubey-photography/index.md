@@ -8,7 +8,7 @@ thumbnail: 'pranjal-dubey-photography-thumb.webp'
 
 {{< figure src="pranjal-dubey-photography-thumb.webp" alt="Silhouette of a fisherman casting his net" caption="Silhouette of a fisherman casting his net" >}}
 
-Project website: [Pranjal Dubey Photography](https://pranjaldubey.photography "Pranjal Dubey Photography")
+Project website: [Pranjal Dubey Photography](https://photosby.pranjaldubey.com "Pranjal Dubey Photography")
 
 This project is an attempt to document my photography. It's an open source project and you can checkout the source code [here](https://github.com/pranjalworm/click "Source code of Pranjal Dubey Photography").
 
